@@ -2,14 +2,14 @@
 
 namespace Model
 {
-    public class Chat
+    public class Chat:BaseEntity
     {
-        [Key]
-        public int ID { get; set; }
         [Required]
         public string Name { get; set; }
-        public virtual byte[] Picture { get; set; }
+        //URL to pucture
+        public string Picture { get; set; }
         public virtual ICollection<Message> Messages { get; set; }
+        [Required]
         public virtual ICollection<ChatUser> ChatUsers { get; set; }
         public DateTime? LastInteraction { get; set; }
     }

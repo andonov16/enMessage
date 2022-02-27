@@ -1,0 +1,17 @@
+D:\Projects\_GitHubRepos\enMessage\enMessage\Service\bin\Debug\net6.0\Service.deps.json
+D:\Projects\_GitHubRepos\enMessage\enMessage\Service\bin\Debug\net6.0\Service.dll
+D:\Projects\_GitHubRepos\enMessage\enMessage\Service\bin\Debug\net6.0\ref\Service.dll
+D:\Projects\_GitHubRepos\enMessage\enMessage\Service\bin\Debug\net6.0\Service.pdb
+D:\Projects\_GitHubRepos\enMessage\enMessage\Service\bin\Debug\net6.0\DataAccess.dll
+D:\Projects\_GitHubRepos\enMessage\enMessage\Service\bin\Debug\net6.0\Model.dll
+D:\Projects\_GitHubRepos\enMessage\enMessage\Service\bin\Debug\net6.0\DataAccess.pdb
+D:\Projects\_GitHubRepos\enMessage\enMessage\Service\bin\Debug\net6.0\Model.pdb
+D:\Projects\_GitHubRepos\enMessage\enMessage\Service\obj\Debug\net6.0\Service.csproj.AssemblyReference.cache
+D:\Projects\_GitHubRepos\enMessage\enMessage\Service\obj\Debug\net6.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\_GitHubRepos\enMessage\enMessage\Service\obj\Debug\net6.0\Service.AssemblyInfoInputs.cache
+D:\Projects\_GitHubRepos\enMessage\enMessage\Service\obj\Debug\net6.0\Service.AssemblyInfo.cs
+D:\Projects\_GitHubRepos\enMessage\enMessage\Service\obj\Debug\net6.0\Service.csproj.CoreCompileInputs.cache
+D:\Projects\_GitHubRepos\enMessage\enMessage\Service\obj\Debug\net6.0\Service.csproj.CopyComplete
+D:\Projects\_GitHubRepos\enMessage\enMessage\Service\obj\Debug\net6.0\Service.dll
+D:\Projects\_GitHubRepos\enMessage\enMessage\Service\obj\Debug\net6.0\ref\Service.dll
+D:\Projects\_GitHubRepos\enMessage\enMessage\Service\obj\Debug\net6.0\Service.pdb

@@ -1,18 +1,21 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Security.Cryptography;
 
 namespace Model
 {
-    public class User
+    public class User:BaseEntity
     {
-        [Key]
-        public string ID { get; set; }
+        //Hashed email
+        [Required]
+        public string Email { get; set; }
         [Required]
         public string Username { get; set; }
-        public virtual byte[] ProfilePic { get; set; }
+        [Required]
+        public string Password { get; set; }
+        //URL
+        public string ProfilePic { get; set; }
         [Required]
         //RSAPArameters -> byte[]
-        public virtual byte[] RSAParams { get; set; }
+        public byte[] RSAParams { get; set; }
         public virtual ICollection<User> Contacts { get; set; }
         public virtual ICollection<User> ContactRequests { get; set; }
         public virtual ICollection<ChatUser> ChatUsers { get; set; }

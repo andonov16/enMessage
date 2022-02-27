@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Model;
 
 namespace DataAccess
@@ -16,6 +15,10 @@ namespace DataAccess
         {
             modelBuilder.Entity<ChatUser>()
                 .HasKey(gu => new { gu.ChatID, gu.UserID });
+
+            modelBuilder.Entity<User>()
+                .HasIndex(u => u.Email)
+                .IsUnique();
         }
 
 

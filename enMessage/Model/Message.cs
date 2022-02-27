@@ -2,10 +2,8 @@
 
 namespace Model
 {
-    public class Message
+    public class Message:BaseEntity
     {
-        [Key]
-        public int ID { get; set; }
         [Required]
         public string DataType { get; set; }
         [Required]
