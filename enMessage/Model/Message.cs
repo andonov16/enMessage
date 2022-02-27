@@ -6,8 +6,9 @@ namespace Model
     {
         [Required]
         public string DataType { get; set; }
+        //URL if file
         [Required]
-        public byte[] Data { get; set; }
+        public string Data { get; set; }
         [Required]
         public User SentBy { get; set; }
         [Required]

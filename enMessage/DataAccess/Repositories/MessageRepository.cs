@@ -1,4 +1,5 @@
 ﻿using Model;
+using DataAccess.Utilities;
 using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess.Repositories
@@ -23,6 +24,12 @@ namespace DataAccess.Repositories
             return await context.Set<Message>()
                     .Include(c => c.SeenBy)
                     .ToListAsync();
+        }
+
+        //Make sure that the path is correct -> Chats\<ChatID>\<file>.<extention>
+        public async Task SaveFileAsync(Message fileMessage, byte[] fileBytes)
+        {
+            await FileUtil.SaveFileAsync(fileMessage.Data, fileBytes);
         }
     }
 }
