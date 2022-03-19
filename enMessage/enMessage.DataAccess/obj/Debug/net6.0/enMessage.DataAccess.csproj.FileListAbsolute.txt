@@ -1,0 +1,17 @@
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.DataAccess\bin\Debug\net6.0\enMessage.DataAccess.deps.json
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.DataAccess\bin\Debug\net6.0\enMessage.DataAccess.runtimeconfig.json
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.DataAccess\bin\Debug\net6.0\enMessage.DataAccess.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.DataAccess\bin\Debug\net6.0\ref\enMessage.DataAccess.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.DataAccess\bin\Debug\net6.0\enMessage.DataAccess.pdb
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.DataAccess\bin\Debug\net6.0\enMessage.Model.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.DataAccess\bin\Debug\net6.0\enMessage.Model.pdb
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.DataAccess\obj\Debug\net6.0\enMessage.DataAccess.csproj.AssemblyReference.cache
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.DataAccess\obj\Debug\net6.0\enMessage.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.DataAccess\obj\Debug\net6.0\enMessage.DataAccess.AssemblyInfoInputs.cache
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.DataAccess\obj\Debug\net6.0\enMessage.DataAccess.AssemblyInfo.cs
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.DataAccess\obj\Debug\net6.0\enMessage.DataAccess.csproj.CoreCompileInputs.cache
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.DataAccess\obj\Debug\net6.0\enMessage.DataAccess.csproj.CopyComplete
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.DataAccess\obj\Debug\net6.0\enMessage.DataAccess.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.DataAccess\obj\Debug\net6.0\ref\enMessage.DataAccess.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.DataAccess\obj\Debug\net6.0\enMessage.DataAccess.pdb
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.DataAccess\obj\Debug\net6.0\enMessage.DataAccess.genruntimeconfig.cache

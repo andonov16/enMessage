@@ -1,0 +1,15 @@
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Shared\bin\Debug\net6.0\enMessage.Shared.deps.json
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Shared\bin\Debug\net6.0\enMessage.Shared.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Shared\bin\Debug\net6.0\ref\enMessage.Shared.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Shared\bin\Debug\net6.0\enMessage.Shared.pdb
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Shared\obj\Debug\net6.0\enMessage.Shared.csproj.AssemblyReference.cache
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Shared\obj\Debug\net6.0\enMessage.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Shared\obj\Debug\net6.0\enMessage.Shared.AssemblyInfoInputs.cache
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Shared\obj\Debug\net6.0\enMessage.Shared.AssemblyInfo.cs
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Shared\obj\Debug\net6.0\enMessage.Shared.csproj.CoreCompileInputs.cache
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Shared\obj\Debug\net6.0\enMessage.Shared.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Shared\obj\Debug\net6.0\ref\enMessage.Shared.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Shared\obj\Debug\net6.0\enMessage.Shared.pdb
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Shared\bin\Debug\net6.0\enMessage.Model.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Shared\bin\Debug\net6.0\enMessage.Model.pdb
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Shared\obj\Debug\net6.0\enMessage.Shared.csproj.CopyComplete
