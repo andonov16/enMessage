@@ -45,7 +45,12 @@
       "ProjectGuid": "3d6061cb-1dab-47ec-b693-cbaba256232d",
       "DisplayName": "enMessage.Shared",
       "ColorIndex": 7
+    },
+    "fbc53998-4395-483b-ac20-4ddf9fbb8f83": {
+      "ProjectGuid": "fbc53998-4395-483b-ac20-4ddf9fbb8f83",
+      "DisplayName": "EncryptingMessages",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 8
+  "NextColorIndex": 9
 }

@@ -12,6 +12,7 @@ namespace enMessage.Model
         public DateTime SentOn { get; set; }
         [Required]
         public string DataType { get; set; }
+        //URL if file
         [Required]
         public string Content { get; set; }
     }
