@@ -24,8 +24,27 @@ namespace enMessage.Shared.Mappers
 
         public static UserViewModel GetUserViewModel(User item, bool includePublicKey)
         {
-            //private UserViewModel LoadAsFriend
-            return null;
+            var result = new UserViewModel()
+            {
+                ID = item.ID,
+                Username =item.Username,
+                PrivateKey = BytesUtil.ConvertFromBytes<RSAParameters>(item.PrivateKey),
+                Friends = item.Friends.Select(f => GetAsFriend(f)).ToList(),
+            };
+
+            if (includePublicKey)
+                result.PublicKey = BytesUtil.ConvertFromBytes<RSAParameters>(item.PublicKey);
+            return result;
+        }
+
+        internal static UserViewModel GetAsFriend(User item)
+        {
+            return new UserViewModel()
+            { 
+                ID = item.ID,
+                Username = item.Username,
+                PrivateKey = BytesUtil.ConvertFromBytes<RSAParameters>(item.PrivateKey),
+            };
         }
     }
 }
