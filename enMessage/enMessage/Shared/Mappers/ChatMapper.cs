@@ -25,8 +25,8 @@ namespace enMessage.Shared.Mappers
                 ChatName = item.ChatName,
                 LastInteraction = item.LastInteraction,
                 Users = item.Users.Select(u => UserMapper.GetAsFriend(u)).ToList(),
-                Messages = item.Messages.Select(m => MessageMapper.GetMessageView(m)),
-                Roles = item.Messages.Select(r => RoleMapper.GetRoleViewModel(r))
+                Messages = item.Messages.Select(m => MessageMapper.GetMessageViewModel(m)).ToList(),
+                Roles = item.Roles.Select(r => RoleMapper.GetRoleViewModel(r)).ToList()
             };
         }
     }
