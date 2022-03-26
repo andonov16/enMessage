@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using enMessage.DataAccess;
 using enMessage.DataAccess.Repositories;
 using enMessage.Shared.Logs;
+using enMessage.Shared.Utilities;
+using enMessage.Shared.ViewModels;
 using enMessage.Model;
 
 namespace enMessage.Server.Controllers
@@ -23,7 +25,7 @@ namespace enMessage.Server.Controllers
 
 
         [HttpGet("{email}/{password}")]
-        public async Task<ActionResult<User>> Login(string email, string password)
+        public async Task<ActionResult<UserViewModel>> Login(string email, string password)
         {
             var result = await repo.FindAsync(u => u.Email == email && u.Password == password);
             if(result.Count != 1)
@@ -34,17 +36,21 @@ namespace enMessage.Server.Controllers
             return Ok(result.First());
         }
 
+        //email and password hashed by the client
         [HttpPost("{username}/{email}/{password}")]
         public async Task<ActionResult> Register(string username, string email, string password)
         {
             User newUser = new User()
             {
                 Username = username,
-                Email = email,
+                Email = password,
                 Password = password
             };
 
-            //create public and private keys for the user
+            KeyGenerator kg = new KeyGenerator();
+            newUser.PublicKey = BytesUtil.ConvertToBytes(kg.GetPublicKey());
+            newUser.PrivateKey = BytesUtil.ConvertToBytes(kg.GetPrivateKey());
+
             try
             {
                 await repo.CreateAsync(newUser);

@@ -50,7 +50,12 @@
       "ProjectGuid": "fbc53998-4395-483b-ac20-4ddf9fbb8f83",
       "DisplayName": "EncryptingMessages",
       "ColorIndex": 8
+    },
+    "d2fdf881-964e-461e-8b70-1a23521b4435": {
+      "ProjectGuid": "d2fdf881-964e-461e-8b70-1a23521b4435",
+      "DisplayName": "HashingText",
+      "ColorIndex": 9
     }
   },
-  "NextColorIndex": 9
+  "NextColorIndex": 10
 }

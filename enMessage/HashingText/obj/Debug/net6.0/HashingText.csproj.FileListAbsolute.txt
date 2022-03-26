@@ -1,0 +1,15 @@
+D:\Projects\_GitHub_Repos\enMessage\enMessage\HashingText\bin\Debug\net6.0\HashingText.exe
+D:\Projects\_GitHub_Repos\enMessage\enMessage\HashingText\bin\Debug\net6.0\HashingText.deps.json
+D:\Projects\_GitHub_Repos\enMessage\enMessage\HashingText\bin\Debug\net6.0\HashingText.runtimeconfig.json
+D:\Projects\_GitHub_Repos\enMessage\enMessage\HashingText\bin\Debug\net6.0\HashingText.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\HashingText\bin\Debug\net6.0\ref\HashingText.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\HashingText\bin\Debug\net6.0\HashingText.pdb
+D:\Projects\_GitHub_Repos\enMessage\enMessage\HashingText\obj\Debug\net6.0\HashingText.csproj.AssemblyReference.cache
+D:\Projects\_GitHub_Repos\enMessage\enMessage\HashingText\obj\Debug\net6.0\HashingText.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\_GitHub_Repos\enMessage\enMessage\HashingText\obj\Debug\net6.0\HashingText.AssemblyInfoInputs.cache
+D:\Projects\_GitHub_Repos\enMessage\enMessage\HashingText\obj\Debug\net6.0\HashingText.AssemblyInfo.cs
+D:\Projects\_GitHub_Repos\enMessage\enMessage\HashingText\obj\Debug\net6.0\HashingText.csproj.CoreCompileInputs.cache
+D:\Projects\_GitHub_Repos\enMessage\enMessage\HashingText\obj\Debug\net6.0\HashingText.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\HashingText\obj\Debug\net6.0\ref\HashingText.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\HashingText\obj\Debug\net6.0\HashingText.pdb
+D:\Projects\_GitHub_Repos\enMessage\enMessage\HashingText\obj\Debug\net6.0\HashingText.genruntimeconfig.cache
