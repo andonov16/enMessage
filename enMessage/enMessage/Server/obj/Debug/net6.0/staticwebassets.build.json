@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GPYGbAKWw7gCPlEKvPApKy9vJug0bQ2eJMWvDGFsyXk=",
+  "Hash": "LdTgsQSmVCASFAyb5nyVzIbIyGL+9zjIk2cuXkVHdqc=",
   "Source": "enMessage.Server",
   "BasePath": "_content/enMessage.Server",
   "Mode": "Default",
@@ -843,6 +843,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Miro\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\6.0.1\\runtimes\\browser-wasm\\lib\\net6.0\\netstandard.dll"
+    },
+    {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Newtonsoft.Json.dll",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Miro\\.nuget\\packages\\newtonsoft.json\\13.0.1\\lib\\netstandard2.0\\Newtonsoft.Json.dll"
     },
     {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.AppContext.dll",
@@ -3648,6 +3665,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Http.Json.dll"
+    },
+    {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\+Qs6KRRN.gz",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Newtonsoft.Json.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Newtonsoft.Json.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Newtonsoft.Json.dll"
     },
     {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\+sUsNUhz.gz",

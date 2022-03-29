@@ -14,10 +14,10 @@ namespace enMessage.Model
         public string Password { get; set; }
         [Required]
         //RSAParameters
-        public byte[] PublicKey { get; set; }
+        public string PublicKey { get; set; }
         [Required]
         //RSAParameters
-        public byte[] PrivateKey { get; set; }
+        public string PrivateKey { get; set; }
         public virtual ICollection<User> Friends { get; set;}
         public virtual ICollection<User> Requests { get; set;}
         public virtual ICollection<Chat> Chats { get; set;}

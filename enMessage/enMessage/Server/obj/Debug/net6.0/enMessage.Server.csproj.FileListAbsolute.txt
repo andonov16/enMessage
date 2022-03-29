@@ -80,3 +80,9 @@ D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Server\obj\Debug\net6.0\
 D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Server\obj\Debug\net6.0\ref\enMessage.Server.dll
 D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Server\obj\Debug\net6.0\enMessage.Server.pdb
 D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Server\obj\Debug\net6.0\enMessage.Server.genruntimeconfig.cache
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Server\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Server\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Server\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Server\obj\Debug\net6.0\enMessage.Server.MvcApplicationPartsAssemblyInfo.cs

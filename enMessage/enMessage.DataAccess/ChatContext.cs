@@ -15,10 +15,6 @@ namespace enMessage.DataAccess
             this.Database.EnsureCreated();
         }
 
-        internal object Entry<T>()
-        {
-            throw new NotImplementedException();
-        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -52,9 +48,9 @@ namespace enMessage.DataAccess
 
 
         //TEMP
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        /*protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer("Server=DESKTOP-GIEF5RK;Database=enMessageDB;Trusted_Connection=True;MultipleActiveResultSets=true;");
-        }
+        }*/
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "JcZ6Gll9+smL7QQBd7mz2F4FVf9Q9JJGDzn04ssC6wvfyx8bVCs9c+2xeXsI8vugpOZrhVIsAFsGPRniEGDU/Q==",
+  "dgSpecHash": "C/zwLg0BTNKDXtQuBkIwLeaHxojU+yDGr/vqvFeh/NovVeC8eAsMb8AlWzZD46RvlB9jFiLro73Xe2bUDzxUyA==",
   "success": true,
   "projectFilePath": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Shared\\enMessage.Shared.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\Miro\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\Miro\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\Miro\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\Miro\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Miro\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Miro\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Miro\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"

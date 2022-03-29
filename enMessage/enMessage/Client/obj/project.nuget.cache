@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TsbQedSL3OWAG/EQGo22GLVqaNC18gRO2OI7zDvrUT0c29EqPGsaGTnUl3QPuv5hEbTwFyZOL3yGBe626WiHKg==",
+  "dgSpecHash": "Q6oKV0OG18/6amsW8L+g4Ik20y4Caz5cV2BCyrp19hOAgzZthU2nv0CfpJs7Amyv2zfoncEVsufi1vJZ5Ws5ug==",
   "success": true,
   "projectFilePath": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\enMessage.Client.csproj",
   "expectedPackageFiles": [
@@ -33,6 +33,7 @@
     "C:\\Users\\Miro\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\Miro\\.nuget\\packages\\microsoft.jsinterop\\6.0.1\\microsoft.jsinterop.6.0.1.nupkg.sha512",
     "C:\\Users\\Miro\\.nuget\\packages\\microsoft.jsinterop.webassembly\\6.0.1\\microsoft.jsinterop.webassembly.6.0.1.nupkg.sha512",
+    "C:\\Users\\Miro\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Miro\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\Miro\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\Miro\\.nuget\\packages\\system.io.pipelines\\6.0.1\\system.io.pipelines.6.0.1.nupkg.sha512",

@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EncryptingMessages", "Encry
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "enMessageWeb", "enMessageWeb", "{DED9AFDF-B201-4E27-8816-F8485A858FA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HashingText", "HashingText\HashingText.csproj", "{D2FDF881-964E-461E-8B70-1A23521B4435}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashingText", "HashingText\HashingText.csproj", "{D2FDF881-964E-461E-8B70-1A23521B4435}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

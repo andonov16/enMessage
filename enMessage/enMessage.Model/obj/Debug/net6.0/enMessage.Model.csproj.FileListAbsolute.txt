@@ -11,3 +11,4 @@ D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.Model\obj\Debug\net6.0\r
 D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.Model\obj\Debug\net6.0\enMessage.Model.pdb
 D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.Model\bin\Debug\net6.0\enMessage.Model.runtimeconfig.json
 D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.Model\obj\Debug\net6.0\enMessage.Model.genruntimeconfig.cache
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage.Model\obj\Debug\net6.0\enMessage.Model.csproj.AssemblyReference.cache

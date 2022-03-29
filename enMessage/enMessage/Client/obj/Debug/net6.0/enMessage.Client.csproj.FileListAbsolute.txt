@@ -849,3 +849,7 @@ D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Client\obj\Debug\net6.0\
 D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Client\obj\Debug\net6.0\build-gz\uWUBNc0R.gz
 D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Client\obj\Debug\net6.0\build-gz\FMWQwI+l.gz
 D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Client\obj\Debug\net6.0\build-gz\SIB43gVO.gz
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Client\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Client\bin\Debug\net6.0\wwwroot\_framework\Newtonsoft.Json.dll.gz
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Client\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Client\obj\Debug\net6.0\build-gz\+Qs6KRRN.gz

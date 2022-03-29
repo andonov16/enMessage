@@ -7,7 +7,7 @@ namespace enMessage.Shared.Mappers
 {
     public static class UserMapper
     {
-        public static User GetUser(string username, string email, string password, byte[] publicKey, byte[] privateKey)
+        public static User GetUser(string username, string email, string password, string publicKey, string privateKey)
         {
             return new User()
             {
@@ -28,12 +28,12 @@ namespace enMessage.Shared.Mappers
             {
                 ID = item.ID,
                 Username =item.Username,
-                PrivateKey = BytesUtil.ConvertFromBytes<RSAParameters>(item.PrivateKey),
+                PrivateKey = JsonUtil.ConvertFromJson<RSAParameters>(item.PrivateKey),
                 Friends = item.Friends.Select(f => GetAsFriend(f)).ToList(),
             };
 
             if (includePublicKey)
-                result.PublicKey = BytesUtil.ConvertFromBytes<RSAParameters>(item.PublicKey);
+                result.PublicKey = JsonUtil.ConvertFromJson<RSAParameters>(item.PublicKey);
             return result;
         }
 
@@ -43,7 +43,7 @@ namespace enMessage.Shared.Mappers
             { 
                 ID = item.ID,
                 Username = item.Username,
-                PrivateKey = BytesUtil.ConvertFromBytes<RSAParameters>(item.PrivateKey),
+                PrivateKey = JsonUtil.ConvertFromJson<RSAParameters>(item.PrivateKey),
             };
         }
     }
