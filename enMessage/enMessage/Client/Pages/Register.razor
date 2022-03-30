@@ -50,9 +50,6 @@
             };
 
         HttpResponseMessage response = await client.PostAsJsonAsync("/api/Account/", registerInfo);
-        //UserLog result = await response.Content.ReadFromJsonAsync<UserViewModel>();
-
-        Console.WriteLine(JsonConvert.SerializeObject(registerInfo));
 
         if(response.IsSuccessStatusCode)
         {

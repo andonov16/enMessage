@@ -29,8 +29,13 @@ namespace enMessage.Shared.Mappers
                 ID = item.ID,
                 Username =item.Username,
                 PrivateKey = JsonUtil.ConvertFromJson<RSAParameters>(item.PrivateKey),
-                Friends = item.Friends.Select(f => GetAsFriend(f)).ToList(),
             };
+
+            if(item.Friends != null)
+            {
+                result.Friends = item.Friends.Select(f => GetAsFriend(f)).ToList();
+            }
+
 
             if (includePublicKey)
                 result.PublicKey = JsonUtil.ConvertFromJson<RSAParameters>(item.PublicKey);

@@ -25,10 +25,10 @@ namespace enMessage.Server.Controllers
 
 
 
-        [HttpGet("{email}/{password}")]
-        public async Task<ActionResult<UserViewModel>> Login(UserLog userInfo)
+        [HttpGet]
+        public async Task<ActionResult<UserViewModel>> Login(string email, string password)
         {
-            var data = await repo.FindAsync(u => u.Email == userInfo.Email && u.Password == userInfo.Password);
+            var data = await repo.FindAsync(u => u.Email == email && u.Password == password);
             if(data.Count != 1)
             {
                 return StatusCode(400, "Invalid email or password!");
@@ -40,7 +40,6 @@ namespace enMessage.Server.Controllers
         }
 
         //email and password hashed by the client
-        //[HttpPost("{username}/{email}/{password}")]
         [HttpPost]
         public async Task<ActionResult> Register(UserLog registerInfo)
         {

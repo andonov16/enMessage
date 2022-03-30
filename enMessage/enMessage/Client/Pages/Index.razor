@@ -1,16 +1,61 @@
 ﻿@page "/"
 @inject HttpClient http;
 @inject NavigationManager navigationManager;
-@using Newtonsoft.Json;
+@using System.Text.Json
+@using System.Text.Json.Serialization;
+@using enMessage.Shared.Logs
+@using enMessage.Shared.Utilities
+@using enMessage.Shared.ViewModels
+@inject IJSRuntime JsRuntime
+@inject HttpClient client
+@inject NavigationManager NavManager
 
 
-<PageTitle>Index</PageTitle>
 
 <h1>Login</h1>
+
+<form method="get" onsubmit="@LoginSubmit">
+    <p>Email:</p>
+    <input @bind = "email"/>
+    <p>Password:</p>
+    <input @bind = "password" type="password"/>
+    <input type="submit"/>
+</form>
 
 <a href="/register"><p>Don`t have account yet?</p></a>
 
 
 @code{
+    UserViewModel logged;
 
+    string email, password;
+
+    public async Task LoginSubmit()
+    {
+        if(!(await ValidateInput(email, password)))
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Enter email and password first!");
+            return;
+        }
+
+        string hashedEmail = HashUtil.Compute(email), hashedPassword = HashUtil.Compute(password);
+
+        
+        try
+        {
+            var user = await client.GetFromJsonAsync<UserViewModel>("api/Account?email="+hashedEmail+"&password="+hashedPassword);
+            await JsRuntime.InvokeVoidAsync("alert", user.Username);   
+        }catch(Exception)
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Invalid account details!");
+            return;
+        }
+
+
+    }
+
+    private async Task<bool> ValidateInput(string email, string password)
+    {
+        return !string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(password);
+    }
 }
