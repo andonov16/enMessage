@@ -22,12 +22,24 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Projects/_GitHub_Repos/enMessage/enMessage/enMessage/Client/Pages/ChatRoom.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhdFJvb20ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/_GitHub_Repos/enMessage/enMessage/enMessage/Client/Pages/Friends.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnJpZW5kcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Projects/_GitHub_Repos/enMessage/enMessage/enMessage/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Projects/_GitHub_Repos/enMessage/enMessage/enMessage/Client/Pages/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Projects/_GitHub_Repos/enMessage/enMessage/enMessage/Client/Pages/User.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Projects/_GitHub_Repos/enMessage/enMessage/enMessage/Client/Shared/SurveyPrompt.razor]

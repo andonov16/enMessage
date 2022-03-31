@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LdTgsQSmVCASFAyb5nyVzIbIyGL+9zjIk2cuXkVHdqc=",
+  "Hash": "5Yo5NPojWSorixQET+92sNes4orXwQFzjJvPcFPX/T4=",
   "Source": "enMessage.Server",
   "BasePath": "_content/enMessage.Server",
   "Mode": "Default",
@@ -369,6 +369,57 @@
       "OriginalItemSpec": "C:\\Users\\Miro\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\6.0.1\\lib\\net6.0\\Microsoft.AspNetCore.Components.WebAssembly.dll"
     },
     {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Connections.Abstractions.dll",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Connections.Abstractions.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Miro\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\6.0.3\\lib\\net6.0\\Microsoft.AspNetCore.Connections.Abstractions.dll"
+    },
+    {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Http.Connections.Client.dll",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Http.Connections.Client.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Miro\\.nuget\\packages\\microsoft.aspnetcore.http.connections.client\\6.0.3\\lib\\net6.0\\Microsoft.AspNetCore.Http.Connections.Client.dll"
+    },
+    {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Http.Connections.Common.dll",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Http.Connections.Common.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Miro\\.nuget\\packages\\microsoft.aspnetcore.http.connections.common\\6.0.3\\lib\\net6.0\\Microsoft.AspNetCore.Http.Connections.Common.dll"
+    },
+    {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Metadata.dll",
       "SourceId": "enMessage.Client",
       "SourceType": "Project",
@@ -384,6 +435,74 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\Users\\Miro\\.nuget\\packages\\microsoft.aspnetcore.metadata\\6.0.1\\lib\\net6.0\\Microsoft.AspNetCore.Metadata.dll"
+    },
+    {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.SignalR.Client.Core.dll",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.SignalR.Client.Core.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Miro\\.nuget\\packages\\microsoft.aspnetcore.signalr.client.core\\6.0.3\\lib\\net6.0\\Microsoft.AspNetCore.SignalR.Client.Core.dll"
+    },
+    {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.SignalR.Client.dll",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.SignalR.Client.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Miro\\.nuget\\packages\\microsoft.aspnetcore.signalr.client\\6.0.3\\lib\\net6.0\\Microsoft.AspNetCore.SignalR.Client.dll"
+    },
+    {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.SignalR.Common.dll",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.SignalR.Common.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Miro\\.nuget\\packages\\microsoft.aspnetcore.signalr.common\\6.0.3\\lib\\net6.0\\Microsoft.AspNetCore.SignalR.Common.dll"
+    },
+    {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Miro\\.nuget\\packages\\microsoft.aspnetcore.signalr.protocols.json\\6.0.3\\lib\\net6.0\\Microsoft.AspNetCore.SignalR.Protocols.Json.dll"
     },
     {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.CSharp.dll",
@@ -590,6 +709,23 @@
       "OriginalItemSpec": "C:\\Users\\Miro\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.0\\lib\\net6.0\\Microsoft.Extensions.DependencyInjection.dll"
     },
     {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Features.dll",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Features.dll",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "BlazorWebAssemblyResource",
+      "AssetTraitValue": "runtime",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\Users\\Miro\\.nuget\\packages\\microsoft.extensions.features\\6.0.3\\lib\\net6.0\\Microsoft.Extensions.Features.dll"
+    },
+    {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.FileProviders.Abstractions.dll",
       "SourceId": "enMessage.Client",
       "SourceType": "Project",
@@ -655,7 +791,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Miro\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\lib\\net6.0\\Microsoft.Extensions.Logging.Abstractions.dll"
+      "OriginalItemSpec": "C:\\Users\\Miro\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.1\\lib\\net6.0\\Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.dll",
@@ -1709,7 +1845,7 @@
       "AssetTraitValue": "runtime",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "C:\\Users\\Miro\\.nuget\\packages\\system.io.pipelines\\6.0.1\\lib\\net6.0\\System.IO.Pipelines.dll"
+      "OriginalItemSpec": "C:\\Users\\Miro\\.nuget\\packages\\system.io.pipelines\\6.0.2\\lib\\net6.0\\System.IO.Pipelines.dll"
     },
     {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipes.AccessControl.dll",
@@ -3684,6 +3820,23 @@
       "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Newtonsoft.Json.dll"
     },
     {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\+s02l9Ig.gz",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Connections.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Connections.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Connections.Abstractions.dll"
+    },
+    {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\+sUsNUhz.gz",
       "SourceId": "enMessage.Client",
       "SourceType": "Project",
@@ -4007,6 +4160,23 @@
       "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Xml.XPath.XDocument.dll"
     },
     {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\6rUJnRZf.gz",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/System.IO.Pipelines.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll"
+    },
+    {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\7hEbjFw4.gz",
       "SourceId": "enMessage.Client",
       "SourceType": "Project",
@@ -4039,6 +4209,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Console.dll"
+    },
+    {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\7vAXwoID.gz",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.SignalR.Common.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.SignalR.Common.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.SignalR.Common.dll"
     },
     {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\94yv8HO3.gz",
@@ -4311,6 +4498,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Tracing.dll"
+    },
+    {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\c6gV1JQo.gz",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Http.Connections.Common.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Http.Connections.Common.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Http.Connections.Common.dll"
     },
     {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\C8XvO41g.gz",
@@ -4738,23 +4942,6 @@
       "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\enMessage.Client.pdb"
     },
     {
-      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\fUmkdrFI.gz",
-      "SourceId": "enMessage.Client",
-      "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
-    },
-    {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\G+lAdRSh.gz",
       "SourceId": "enMessage.Client",
       "SourceType": "Project",
@@ -4889,23 +5076,6 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.Http.dll"
-    },
-    {
-      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\HF7qS9xY.gz",
-      "SourceId": "enMessage.Client",
-      "SourceType": "Project",
-      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
-      "BasePath": "/",
-      "RelativePath": "_framework/System.IO.Pipelines.dll.gz",
-      "AssetKind": "Build",
-      "AssetMode": "All",
-      "AssetRole": "Alternative",
-      "RelatedAsset": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll",
-      "AssetTraitName": "Content-Encoding",
-      "AssetTraitValue": "gzip",
-      "CopyToOutputDirectory": "PreserveNewest",
-      "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.IO.Pipelines.dll"
     },
     {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\hKQX0LG4.gz",
@@ -5297,6 +5467,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Collections.Specialized.dll"
+    },
+    {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\JvZPNYLg.gz",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.SignalR.Client.Core.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.SignalR.Client.Core.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.SignalR.Client.Core.dll"
     },
     {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\JytGeJqr.gz",
@@ -6234,6 +6421,23 @@
       "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Diagnostics.Process.dll"
     },
     {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\ssOhMNau.gz",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Logging.Abstractions.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Logging.Abstractions.dll"
+    },
+    {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\t1SR04UN.gz",
       "SourceId": "enMessage.Client",
       "SourceType": "Project",
@@ -6402,6 +6606,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Memory.dll"
+    },
+    {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\uDl+GSqt.gz",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.Http.Connections.Client.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Http.Connections.Client.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.Http.Connections.Client.dll"
     },
     {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\uEmkkobx.gz",
@@ -6574,6 +6795,23 @@
       "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.InteropServices.RuntimeInformation.dll"
     },
     {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\wB9UYvKG.gz",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.SignalR.Client.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.SignalR.Client.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.SignalR.Client.dll"
+    },
+    {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\wBuBYvUw.gz",
       "SourceId": "enMessage.Client",
       "SourceType": "Project",
@@ -6657,6 +6895,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Runtime.Numerics.dll"
+    },
+    {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\wTHsGzfI.gz",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.AspNetCore.SignalR.Protocols.Json.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.SignalR.Protocols.Json.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.AspNetCore.SignalR.Protocols.Json.dll"
     },
     {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\wVFkULp5.gz",
@@ -7048,6 +7303,23 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\System.Net.WebHeaderCollection.dll"
+    },
+    {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\zs6+IPwo.gz",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/Microsoft.Extensions.Features.dll.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "RelatedAsset": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Features.dll",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\bin\\Debug\\net6.0\\wwwroot\\_framework\\Microsoft.Extensions.Features.dll"
     },
     {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\obj\\Debug\\net6.0\\build-gz\\zSlrdew+.gz",

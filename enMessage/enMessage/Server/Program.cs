@@ -2,6 +2,8 @@ using Microsoft.AspNetCore.ResponseCompression;
 using Microsoft.EntityFrameworkCore;
 using enMessage.DataAccess;
 using enMessage.DataAccess.Repositories;
+using enMessage.Server;
+using enMessage.Server.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,11 +12,11 @@ string connectionString = builder.Configuration.GetConnectionString("DefaultConn
 builder.Services.AddDbContext<ChatContext>(options =>
     options.UseSqlServer(connectionString));
 
-builder.Services.AddScoped<ChatContext>();
 builder.Services.AddScoped<ChatRepository>();
 builder.Services.AddScoped<MessageRepository>();
 builder.Services.AddScoped<RoleRepository>();
 builder.Services.AddScoped<UserRepository>();
+builder.Services.AddScoped<RequestRepository>();
 
 
 
@@ -24,9 +26,17 @@ builder.Services.AddScoped<UserRepository>();
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+builder.Services.AddSignalR();
 
 //add swagger
 builder.Services.AddSwaggerGen();
+
+//add signalr
+builder.Services.AddResponseCompression(opts =>
+{
+    opts.MimeTypes = ResponseCompressionDefaults.MimeTypes.Concat(
+        new[] { "application/octet-stream" });
+});
 
 
 
@@ -50,10 +60,12 @@ app.UseHttpsRedirection();
 app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();
 
+
+//app.MapBlazorHub();
+app.MapHub<ChatHub>("/chathub");
 app.UseRouting();
 
 app.MapRazorPages();
-
 
 
 app.MapControllers();

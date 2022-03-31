@@ -1,6 +1,7 @@
 ﻿using enMessage.Model;
 using enMessage.Shared.Utilities;
 using enMessage.Shared.ViewModels;
+using Newtonsoft.Json;
 using System.Security.Cryptography;
 
 namespace enMessage.Shared.Mappers
@@ -17,7 +18,7 @@ namespace enMessage.Shared.Mappers
                 PublicKey = publicKey,
                 PrivateKey = privateKey,
                 Friends = new List<User>(),
-                Requests = new List<User>(),
+                Requests = new List<Request>(),
                 Chats = new List<Chat>()
             };
         }
@@ -28,17 +29,21 @@ namespace enMessage.Shared.Mappers
             {
                 ID = item.ID,
                 Username =item.Username,
-                PrivateKey = JsonUtil.ConvertFromJson<RSAParameters>(item.PrivateKey),
+                //PrivateKey = JsonUtil.ConvertFromJson<RSAParameters>(item.PrivateKey),
+                PrivateKey = item.PrivateKey,
+                //PrivateKey = JsonConvert.DeserializeObject<RSAParameters>(item.PrivateKey),
+                Friends = item.Friends.Select(f => GetAsFriend(f)).ToList(),
+                Chats = item.Chats.Select(c => ChatMapper.GetChatViewModel(c)).ToList(),
+                Requests = item.Requests.Select(r => RequestMapper.GetRequestViewModel(r)).ToList()
             };
 
-            if(item.Friends != null)
+            if (includePublicKey)
             {
-                result.Friends = item.Friends.Select(f => GetAsFriend(f)).ToList();
+                //result.PublicKey = JsonUtil.ConvertFromJson<RSAParameters>(item.PublicKey);
+                result.PublicKey = item.PrivateKey;
+                //result.PublicKey = JsonConvert.DeserializeObject<RSAParameters>(item.PublicKey);
             }
 
-
-            if (includePublicKey)
-                result.PublicKey = JsonUtil.ConvertFromJson<RSAParameters>(item.PublicKey);
             return result;
         }
 
@@ -48,7 +53,9 @@ namespace enMessage.Shared.Mappers
             { 
                 ID = item.ID,
                 Username = item.Username,
-                PrivateKey = JsonUtil.ConvertFromJson<RSAParameters>(item.PrivateKey),
+                //PrivateKey = JsonUtil.ConvertFromJson<RSAParameters>(item.PrivateKey),
+                PrivateKey = item.PrivateKey
+                //PrivateKey = JsonConvert.DeserializeObject<RSAParameters>(item.PrivateKey)
             };
         }
     }

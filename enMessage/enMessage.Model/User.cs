@@ -19,7 +19,7 @@ namespace enMessage.Model
         //RSAParameters
         public string PrivateKey { get; set; }
         public virtual ICollection<User> Friends { get; set;}
-        public virtual ICollection<User> Requests { get; set;}
+        public virtual ICollection<Request> Requests { get; set;}
         public virtual ICollection<Chat> Chats { get; set;}
     }
 }

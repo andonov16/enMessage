@@ -6,7 +6,7 @@ namespace enMessage.Shared.Utilities
 {
     public static class JsonUtil
     {
-        public static string ConvertToJson(object item)
+        public static string ConvertToJson<T>(T item)
         {
             if(item == null)
                 throw new ArgumentNullException("item is null!");

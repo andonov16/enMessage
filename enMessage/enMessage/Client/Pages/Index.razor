@@ -1,6 +1,4 @@
 ﻿@page "/"
-@inject HttpClient http;
-@inject NavigationManager navigationManager;
 @using System.Text.Json
 @using System.Text.Json.Serialization;
 @using enMessage.Shared.Logs
@@ -9,7 +7,6 @@
 @inject IJSRuntime JsRuntime
 @inject HttpClient client
 @inject NavigationManager NavManager
-
 
 
 <h1>Login</h1>
@@ -40,11 +37,11 @@
 
         string hashedEmail = HashUtil.Compute(email), hashedPassword = HashUtil.Compute(password);
 
-        
+
         try
         {
-            var user = await client.GetFromJsonAsync<UserViewModel>("api/Account?email="+hashedEmail+"&password="+hashedPassword);
-            await JsRuntime.InvokeVoidAsync("alert", user.Username);   
+            var userID = await client.GetFromJsonAsync<Guid>("api/Account/"+hashedEmail+"/"+hashedPassword);
+            NavManager.NavigateTo("/user/"+userID+"/");
         }catch(Exception)
         {
             await JsRuntime.InvokeVoidAsync("alert", "Invalid account details!");

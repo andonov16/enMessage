@@ -1,0 +1,29 @@
+﻿@page "/user/{userid}"
+@using enMessage.Shared.ViewModels
+@inject IJSRuntime JsRuntime
+@inject HttpClient client
+@inject NavigationManager NavManager
+
+<div class="sidebar">
+    <button onclick="@GoToFriendsAsync">Friends</button>
+</div>
+
+<h3>UserControl</h3>
+@UserId
+
+
+@code {
+    [Parameter]
+    public string UserId { get; set; }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+
+    }
+
+    protected void GoToFriendsAsync()
+    {
+        NavManager.NavigateTo("friends/" + UserId);
+    }
+}

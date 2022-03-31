@@ -25,28 +25,24 @@ namespace enMessage.Server.Controllers
 
 
 
-        [HttpGet]
-        public async Task<ActionResult<UserViewModel>> Login(string email, string password)
+        [HttpGet("{email}/{password}")]
+        public async Task<ActionResult<Guid>> Login(string email, string password)
         {
             var data = await repo.FindAsync(u => u.Email == email && u.Password == password);
-            if(data.Count != 1)
-            {
-                return StatusCode(400, "Invalid email or password!");
-            }
 
-            var result = UserMapper.GetUserViewModel(data.Single(), true);
+            var result = data.First().ID;
 
             return Ok(result);
         }
 
         //email and password hashed by the client
-        [HttpPost]
-        public async Task<ActionResult> Register(UserLog registerInfo)
+        [HttpPost("{username}/{email}/{password}")]
+        public async Task<ActionResult> Register(string username, string email, string password)
         {
             try
             {
                 KeyGenerator kg = new KeyGenerator();
-                User newUser = UserMapper.GetUser(registerInfo.Username, registerInfo.Email, registerInfo.Password,
+                User newUser = UserMapper.GetUser(username, email, password,
                     JsonUtil.ConvertToJson(kg.GetPublicKey()),
                     JsonUtil.ConvertToJson(kg.GetPrivateKey()));
 

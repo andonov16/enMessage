@@ -1,0 +1,29 @@
+﻿@page "/friends/{userid}"
+@using enMessage.Shared.ViewModels
+@inject IJSRuntime JsRuntime
+@inject HttpClient client
+@inject NavigationManager NavManager
+
+<h3>@me.Username `s Friends</h3>
+
+<div>
+    <h3>Friend requests:</h3>
+    <ul>
+        @foreach(var req in me.Requests)
+        {
+            <li>@req.RequestedFrom</li>
+        }
+    </ul>
+</div>
+
+@code {
+    [Parameter]
+    public string UserId { get; set; }
+    private UserViewModel me;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        me = await client.GetFromJsonAsync<UserViewModel>("api/users/" + UserId);
+    }
+}
