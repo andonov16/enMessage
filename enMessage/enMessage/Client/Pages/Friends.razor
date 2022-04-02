@@ -73,7 +73,7 @@
 
     protected async void AcceptRequestAsync(string requestID)
     {
-        var request = new HttpRequestMessage(HttpMethod.Post, "/api/users/acceptfriend/" + UserId +  "/" + requestID);
+        var request = new HttpRequestMessage(HttpMethod.Put, "/api/users/acceptfriend/" + UserId +  "/" + requestID);
         var response = await client.SendAsync(request);
 
         if(response.IsSuccessStatusCode)

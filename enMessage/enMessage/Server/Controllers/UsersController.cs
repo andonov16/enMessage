@@ -80,7 +80,7 @@ namespace enMessage.Server.Controllers
 
 
 
-        [HttpPost("acceptfriend/{myid}/{requestid}")]
+        [HttpPut("acceptfriend/{myid}/{requestid}")]
         public async Task<ActionResult<UserViewModel>> AcceptFriendRequestAsync(Guid myid, Guid requestid)
         {
             var me = await repo.ReadFullAsync(myid);
