@@ -28,7 +28,7 @@ namespace enMessage.Server.Controllers
 
         // GET: api/Users/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<UserViewModel>> GetUser(Guid id)
+        public async Task<ActionResult<UserViewModel>> GetUserAsync(Guid id)
         {
             var user = await repo.ReadFullAsync(id);
 
@@ -42,20 +42,28 @@ namespace enMessage.Server.Controllers
         }
 
 
-        //разменя requestedfrom i requestedto
-        [HttpPut("request/{myid}/{frname}")]
-        public async Task<ActionResult<Request>> PutUser(Guid myid, string frname)
+        [HttpPost("request/{myid}/{frname}")]
+        public async Task<IActionResult> SendFriendRequestAsync(Guid myid, string frname)
         {
             var me = await repo.ReadFullAsync(myid);
 
 
-            if(me.Friends.Any(f => f.Username == frname))
+            if (me.Friends.Any(f => f.Username == frname))
             {
                 return Ok("You already have " + frname + " as a friend!");
             }
 
             var findFr = await repo.FindFullAsync(u => u.Username == frname);
             var fr = findFr.Single();
+
+            if (fr.Requests.Any(r => r.RequestedFromID == me.ID))
+            {
+                return StatusCode(400, "You already have sent request to " + fr.Username);
+            }
+            if(me.Requests.Any(r => r.RequestedFromID == fr.ID))
+            {
+                return StatusCode(400, "This request already exists!");
+            }
 
             var newRequest = RequestMapper.GetRequest(me);
 
@@ -72,9 +80,29 @@ namespace enMessage.Server.Controllers
 
 
 
+        [HttpPost("acceptfriend/{myid}/{requestid}")]
+        public async Task<ActionResult<UserViewModel>> AcceptFriendRequestAsync(Guid myid, Guid requestid)
+        {
+            var me = await repo.ReadFullAsync(myid);
+            var request = await requestRepo.ReadAsync(requestid);
+            var newFriend = await repo.ReadFullAsync(request.RequestedFromID);
+
+            me.Friends.Add(newFriend);
+            newFriend.Friends.Add(me);
+            me.Requests.Remove(request);
+
+            //have to create chat!
+            await repo.UpdateAsync(me);
+            await repo.UpdateAsync(newFriend);
+            await requestRepo.DeleteAsync(requestid);
+
+            return Ok(newFriend.Username + "was added to your friends list!");
+        }
+
+
         // DELETE: api/Users/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUser(Guid id)
+        public async Task<IActionResult> DeleteUserAsync(Guid id)
         {
             await repo.DeleteAsync(id);
 

@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using enMessage.DataAccess;
 using enMessage.DataAccess.Repositories;
-using enMessage.Shared.Logs;
 using enMessage.Shared.Utilities;
 using enMessage.Shared.ViewModels;
 using enMessage.Shared.Mappers;
@@ -26,7 +25,7 @@ namespace enMessage.Server.Controllers
 
 
         [HttpGet("{email}/{password}")]
-        public async Task<ActionResult<Guid>> Login(string email, string password)
+        public async Task<ActionResult<Guid>> LoginAsync(string email, string password)
         {
             var data = await repo.FindAsync(u => u.Email == email && u.Password == password);
 
@@ -37,7 +36,7 @@ namespace enMessage.Server.Controllers
 
         //email and password hashed by the client
         [HttpPost("{username}/{email}/{password}")]
-        public async Task<ActionResult> Register(string username, string email, string password)
+        public async Task<ActionResult> RegisterAsync(string username, string email, string password)
         {
             try
             {

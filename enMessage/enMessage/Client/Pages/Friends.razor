@@ -7,11 +7,35 @@
 <h3>@me.Username `s Friends</h3>
 
 <div>
+    <h3>Friends:</h3>
+    <ul>
+        @foreach(var friend in me.Friends)
+        {
+            <li>@friend.Username</li>
+        }
+    </ul>
+</div>
+
+<div>
+    <form onsubmit="@SendRequestAsync">
+        <p>Send friend request to:</p>
+        <p>Username:</p>
+        <input @bind = "requestUsername"/>
+        <input type = "submit" />
+    </form>
+</div>
+
+<div>
     <h3>Friend requests:</h3>
     <ul>
         @foreach(var req in me.Requests)
         {
-            <li>@req.RequestedFrom</li>
+            var currentRequestID = req.ID;
+            <li>
+                <span>@req.RequestedFrom</span>
+                <span><button @onclick="@(e => AcceptRequestAsync(req.ID.ToString()))">Accept</button></span>
+                <span><button @onclick="@(e => DeclineRequestAsync(req.ID.ToString()))">Decline</button></span>
+            </li>
         }
     </ul>
 </div>
@@ -20,10 +44,60 @@
     [Parameter]
     public string UserId { get; set; }
     private UserViewModel me;
-
+    private string requestUsername;
 
     protected override async Task OnInitializedAsync()
     {
         me = await client.GetFromJsonAsync<UserViewModel>("api/users/" + UserId);
+    }
+
+    protected async void SendRequestAsync()
+    {
+        if(string.IsNullOrEmpty(requestUsername))
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Please enter a username first!");
+            return;
+        }
+
+        var request = new HttpRequestMessage(HttpMethod.Post, "/api/users/request/" + UserId + "/" + requestUsername);
+        var response = await client.SendAsync(request);
+
+        if(response.IsSuccessStatusCode)
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Request sent sucesfully!");
+        }else
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Request could not be sent! " + await response.Content.ReadAsStringAsync());
+        }
+    }
+
+    protected async void AcceptRequestAsync(string requestID)
+    {
+        var request = new HttpRequestMessage(HttpMethod.Post, "/api/users/acceptfriend/" + UserId +  "/" + requestID);
+        var response = await client.SendAsync(request);
+
+        if(response.IsSuccessStatusCode)
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Request Accepted!!");
+            NavManager.NavigateTo(NavManager.Uri, forceLoad: true);
+        }else
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Error occured! " + await response.Content.ReadAsStringAsync());
+        }
+    }
+    
+    protected async void DeclineRequestAsync(string requestID)
+    {
+        var request = new HttpRequestMessage(HttpMethod.Delete, "/api/requests/" + requestID);
+        var response = await client.SendAsync(request);
+
+        if(response.IsSuccessStatusCode)
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Request declined!!");
+            NavManager.NavigateTo(NavManager.Uri, forceLoad: true);
+        }else
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Error occured! " + await response.Content.ReadAsStringAsync());
+        }
     }
 }
