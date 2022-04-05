@@ -6,6 +6,7 @@ using enMessage.DataAccess.Repositories;
 using enMessage.Model;
 using enMessage.Shared.ViewModels;
 using enMessage.Shared.Mappers;
+using Newtonsoft.Json;
 
 namespace enMessage.Server.Controllers
 {
@@ -46,9 +47,9 @@ namespace enMessage.Server.Controllers
         public async Task<IActionResult> SendFriendRequestAsync(Guid myid, string frname)
         {
             var me = await repo.ReadFullAsync(myid);
+            var friends = JsonConvert.DeserializeObject<List<User>>(me.Friends);
 
-
-            if (me.Friends.Any(f => f.Username == frname))
+            if (friends.Any(f => f.Username == frname))
             {
                 return Ok("You already have " + frname + " as a friend!");
             }
@@ -87,11 +88,16 @@ namespace enMessage.Server.Controllers
             var request = await requestRepo.ReadAsync(requestid);
             var newFriend = await repo.ReadFullAsync(request.RequestedFromID);
 
-            me.Friends.Add(newFriend);
-            newFriend.Friends.Add(me);
+            var myFriends = JsonConvert.DeserializeObject<ICollection<User>>(me.Friends);
+            var newFriendFriends = JsonConvert.DeserializeObject<ICollection<User>>(newFriend.Friends);
+
+            myFriends.Add(newFriend);
+            newFriendFriends.Add(me);
             me.Requests.Remove(request);
 
-            //have to create chat!
+            me.Friends = JsonConvert.SerializeObject(myFriends);
+            newFriend.Friends = JsonConvert.SerializeObject(newFriendFriends);
+
             await repo.UpdateAsync(me);
             await repo.UpdateAsync(newFriend);
             await requestRepo.DeleteAsync(requestid);

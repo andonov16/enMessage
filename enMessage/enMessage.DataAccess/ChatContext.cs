@@ -63,7 +63,7 @@ namespace enMessage.DataAccess
         //TEMP
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=DESKTOP-GIEF5RK;Database=enMessageDB;Trusted_Connection=True;MultipleActiveResultSets=true;");
+            optionsBuilder.UseSqlServer("Server=.;Database=enMessageDB;Trusted_Connection=True;MultipleActiveResultSets=true;");
         }
     }
 }

@@ -13,7 +13,6 @@ namespace enMessage.DataAccess.Repositories
         public override async Task<User> ReadFullAsync(Guid id)
         {
             return await context.Users
-                .Include(u => u.Friends)
                 .Include(u => u.Requests)
                 .Include(u => u.Chats)
                 .SingleAsync(u => u.ID == id);
@@ -22,7 +21,6 @@ namespace enMessage.DataAccess.Repositories
         public override async Task<ICollection<User>> ReadAllFullAsync()
         {
             return await context.Users
-                .Include(u => u.Friends)
                 .Include(u => u.Requests)
                 .Include(u => u.Chats)
                 .ToListAsync();
