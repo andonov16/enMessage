@@ -5,25 +5,33 @@
 @inject NavigationManager NavManager
 
 <div class="sidebar">
-    <button onclick="@GoToFriendsAsync">Friends</button>
+    <button onclick="@GoToFriends">Friends</button>
+    <button onclick="@Logout">Logout</button>
 </div>
 
 <h3>UserControl</h3>
-@UserId
+<p>@me.Username</p>
+<p>@UserId</p>
 
 
 @code {
     [Parameter]
     public string UserId { get; set; }
+    private UserViewModel me;
 
 
     protected override async Task OnInitializedAsync()
     {
-
+        me = await client.GetFromJsonAsync<UserViewModel>("api/users/" + UserId);
     }
 
-    protected void GoToFriendsAsync()
+    protected void GoToFriends()
     {
         NavManager.NavigateTo("friends/" + UserId);
+    }
+
+    protected void Logout()
+    {
+        NavManager.NavigateTo("/");
     }
 }

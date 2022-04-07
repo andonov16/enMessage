@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VD/230v0vZlKcziMtFQIzDS2eDLuT+qVbIL0c9tRDu3rQrsTm4YxXeLhIQnrGeobuTZmONc/bgA+kJ6x1loy4Q==",
+  "dgSpecHash": "VqyF7ti4la278sldXnpVeqhhA50BY/+xbFA6yyHxg54GdpJzXXf1j7Pz2KDd7gYd1jh99yZpaJA27ZCAFxq29A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\miroa\\OneDrive\\Desktop\\enMessage-Version-1.0\\enMessage\\enMessage\\Client\\enMessage.Client.csproj",
+  "projectFilePath": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage\\Client\\enMessage.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\miroa\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.1\\microsoft.aspnetcore.authorization.6.0.1.nupkg.sha512",
     "C:\\Users\\miroa\\.nuget\\packages\\microsoft.aspnetcore.components\\6.0.1\\microsoft.aspnetcore.components.6.0.1.nupkg.sha512",

@@ -5,6 +5,12 @@
 @inject NavigationManager NavManager
 
 <h3>@me.Username `s Friends</h3>
+<div class="sidebar">
+    <button onclick="@GoToUser">User</button>
+    <button onclick="@Logout">Logout</button>
+</div>
+
+
 
 <div>
     <h3>Friends:</h3>
@@ -16,6 +22,9 @@
     </ul>
 </div>
 
+
+
+<h3>Friend requests:</h3>
 <div>
     <form onsubmit="@SendRequestAsync">
         <p>Send friend request to:</p>
@@ -26,7 +35,6 @@
 </div>
 
 <div>
-    <h3>Friend requests:</h3>
     <ul>
         @foreach(var req in me.Requests)
         {
@@ -99,5 +107,15 @@
         {
             await JsRuntime.InvokeVoidAsync("alert", "Error occured! " + await response.Content.ReadAsStringAsync());
         }
+    }
+
+    protected void GoToUser()
+    {
+        NavManager.NavigateTo("user/" + UserId);
+    }
+
+    protected void Logout()
+    {
+        NavManager.NavigateTo("/");
     }
 }

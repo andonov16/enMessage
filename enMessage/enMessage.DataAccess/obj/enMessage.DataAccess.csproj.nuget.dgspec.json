@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\miroa\\OneDrive\\Desktop\\enMessage-Version-1.0\\enMessage\\enMessage.DataAccess\\enMessage.DataAccess.csproj": {}
+    "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage.DataAccess\\enMessage.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\miroa\\OneDrive\\Desktop\\enMessage-Version-1.0\\enMessage\\enMessage.DataAccess\\enMessage.DataAccess.csproj": {
+    "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage.DataAccess\\enMessage.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\miroa\\OneDrive\\Desktop\\enMessage-Version-1.0\\enMessage\\enMessage.DataAccess\\enMessage.DataAccess.csproj",
+        "projectUniqueName": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage.DataAccess\\enMessage.DataAccess.csproj",
         "projectName": "enMessage.DataAccess",
-        "projectPath": "C:\\Users\\miroa\\OneDrive\\Desktop\\enMessage-Version-1.0\\enMessage\\enMessage.DataAccess\\enMessage.DataAccess.csproj",
+        "projectPath": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage.DataAccess\\enMessage.DataAccess.csproj",
         "packagesPath": "C:\\Users\\miroa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\miroa\\OneDrive\\Desktop\\enMessage-Version-1.0\\enMessage\\enMessage.DataAccess\\obj\\",
+        "outputPath": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\miroa\\OneDrive\\Desktop\\enMessage-Version-1.0\\enMessage\\enMessage.Model\\enMessage.Model.csproj": {
-                "projectPath": "C:\\Users\\miroa\\OneDrive\\Desktop\\enMessage-Version-1.0\\enMessage\\enMessage.Model\\enMessage.Model.csproj"
+              "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage.Model\\enMessage.Model.csproj": {
+                "projectPath": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage.Model\\enMessage.Model.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\Users\\miroa\\OneDrive\\Desktop\\enMessage-Version-1.0\\enMessage\\enMessage.Model\\enMessage.Model.csproj": {
+    "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage.Model\\enMessage.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\miroa\\OneDrive\\Desktop\\enMessage-Version-1.0\\enMessage\\enMessage.Model\\enMessage.Model.csproj",
+        "projectUniqueName": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage.Model\\enMessage.Model.csproj",
         "projectName": "enMessage.Model",
-        "projectPath": "C:\\Users\\miroa\\OneDrive\\Desktop\\enMessage-Version-1.0\\enMessage\\enMessage.Model\\enMessage.Model.csproj",
+        "projectPath": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage.Model\\enMessage.Model.csproj",
         "packagesPath": "C:\\Users\\miroa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\miroa\\OneDrive\\Desktop\\enMessage-Version-1.0\\enMessage\\enMessage.Model\\obj\\",
+        "outputPath": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage.Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

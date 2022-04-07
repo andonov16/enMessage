@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wV6IWnvi11uk/PHStiSZJ7bMS6z9/iEwfXLuE92R8ZHrjGNhb/qEmQTaVMWZkPcLSc5ZSYS/PhzP1Ssrx4s7wQ==",
+  "dgSpecHash": "fGYnxjAL0Uva/Zm1hSDmYQAIEm7nK3J053OHwhiOtjZ6jb1buOkA6yWsSdNk+GEytajCqlhQU0A/uNaVqEep+w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\miroa\\OneDrive\\Desktop\\enMessage-Version-1.0\\enMessage\\enMessage\\Server\\enMessage.Server.csproj",
+  "projectFilePath": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage\\Server\\enMessage.Server.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\miroa\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\miroa\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
