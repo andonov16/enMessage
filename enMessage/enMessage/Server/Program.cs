@@ -4,6 +4,7 @@ using enMessage.DataAccess;
 using enMessage.DataAccess.Repositories;
 using enMessage.Server;
 using enMessage.Server.Hubs;
+using Newtonsoft.Json;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,14 +20,12 @@ builder.Services.AddScoped<UserRepository>();
 builder.Services.AddScoped<RequestRepository>();
 
 
-
-
-
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddSignalR();
+
 
 //add swagger
 builder.Services.AddSwaggerGen();

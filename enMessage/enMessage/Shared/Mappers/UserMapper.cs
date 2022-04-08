@@ -31,7 +31,7 @@ namespace enMessage.Shared.Mappers
                 Username =item.Username,
                 PrivateKey = item.PrivateKey,
                 Friends = JsonConvert.DeserializeObject<List<User>>(item.Friends).Select(f => GetAsFriend(f)).ToList(),
-                Chats = item.Chats.Select(c => ChatMapper.GetChatViewModel(c)).ToList(),
+                Chats = item.Chats.Select(c => ChatMapper.GetSimpleView(c)).ToList(),
                 Requests = item.Requests.Select(r => RequestMapper.GetRequestViewModel(r)).ToList()
             };
 

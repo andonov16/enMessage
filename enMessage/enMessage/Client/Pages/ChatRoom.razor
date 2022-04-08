@@ -1,4 +1,4 @@
-﻿@page "/chat/"
+﻿@page "/chat/{id}"
 @using Microsoft.AspNetCore.SignalR.Client
 @using enMessage.Shared.ViewModels
 @inject NavigationManager NavigationManager
@@ -30,6 +30,8 @@
 </ul>
 
 @code {
+    [Parameter]
+    public string ID{ get; set; }
     private HubConnection? hubConnection;
     private List<string> messages = new List<string>();
     private string username;

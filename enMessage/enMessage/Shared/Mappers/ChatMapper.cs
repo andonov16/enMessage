@@ -17,6 +17,7 @@ namespace enMessage.Shared.Mappers
             };
         }
 
+        //manually check for null valls?
         public static ChatViewModel GetChatViewModel(Chat item)
         {
             return new ChatViewModel()
@@ -27,6 +28,16 @@ namespace enMessage.Shared.Mappers
                 Users = item.Users.Select(u => UserMapper.GetAsFriend(u)).ToList(),
                 Messages = item.Messages.Select(m => MessageMapper.GetMessageViewModel(m)).ToList(),
                 Roles = item.Roles.Select(r => RoleMapper.GetRoleViewModel(r)).ToList()
+            };
+        }
+
+        public static ChatViewModel GetSimpleView(Chat item)
+        {
+            return new ChatViewModel()
+            {
+                ID = item.ID,
+                ChatName = item.ChatName,
+                LastInteraction = item.LastInteraction
             };
         }
     }

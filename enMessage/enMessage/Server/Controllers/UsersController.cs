@@ -27,7 +27,7 @@ namespace enMessage.Server.Controllers
 
 
 
-        // GET: api/Users/5
+        //Problem with loading chats (null in ChatMapper??)
         [HttpGet("{id}")]
         public async Task<ActionResult<UserViewModel>> GetUserAsync(Guid id)
         {
@@ -38,7 +38,6 @@ namespace enMessage.Server.Controllers
                 return NotFound();
             }
 
-            //return user;
             return UserMapper.GetUserViewModel(user, true);
         }
 

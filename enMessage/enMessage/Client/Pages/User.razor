@@ -1,10 +1,10 @@
 ﻿@page "/user/{userid}"
 @using enMessage.Shared.ViewModels
-@inject IJSRuntime JsRuntime
 @inject HttpClient client
 @inject NavigationManager NavManager
 
 <div class="sidebar">
+    <button onclick="@GoToCreateChat">Create chat</button>
     <button onclick="@GoToFriends">Friends</button>
     <button onclick="@Logout">Logout</button>
 </div>
@@ -13,6 +13,17 @@
 <p>@me.Username</p>
 <p>@UserId</p>
 
+<div>
+    <h4>Chats:</h4>
+
+    @foreach(var chat in me.Chats.OrderByDescending(c => c.LastInteraction))
+    {
+        <div>
+            <button @onclick="@(() => GoToChatRoom(chat.ID))">@chat.ChatName</button>
+            <label>@chat.LastInteraction</label>
+       </div>
+    }
+</div>
 
 @code {
     [Parameter]
@@ -23,6 +34,16 @@
     protected override async Task OnInitializedAsync()
     {
         me = await client.GetFromJsonAsync<UserViewModel>("api/users/" + UserId);
+    }
+
+    protected void GoToChatRoom(Guid id)
+    {
+        NavManager.NavigateTo("chat/" + id);
+    }
+
+    protected void GoToCreateChat()
+    {
+        NavManager.NavigateTo("createchat/" + UserId);
     }
 
     protected void GoToFriends()
