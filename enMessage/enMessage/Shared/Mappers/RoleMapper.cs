@@ -21,7 +21,7 @@ namespace enMessage.Shared.Mappers
             {
                 ID = item.ID,
                 Holder = UserMapper.GetAsFriend(item.Holder),
-                ChatRoom = ChatMapper.GetChatViewModel(item.ChatRoom),
+                ChatRoom = ChatMapper.GetSimpleView(item.ChatRoom),
                 RoleInChat = item.RoleInChat
             };
         }

@@ -66,13 +66,15 @@ namespace enMessage.Server.Controllers
         [HttpDelete("{userid}/{chatid}/{messageid}")]
         public async Task<IActionResult> DeleteMessage(Guid userid, Guid chatid, Guid messageid)
         {
-            var userRole = (await roleRepo.FindAsync(r => r.Holder.ID == userid && r.ChatRoom.ID == chatid)).Single();
-            if(userRole.RoleInChat != "admin")
+            var user = await userRepo.ReadAsync(userid);
+            var chat = await chatRepo.ReadFullAsync(chatid);
+            var userRole = (await roleRepo.FindAsync(r => r.Holder == user && r.ChatRoom == chat)).SingleOrDefault();
+
+            if (userRole.RoleInChat != "admin")
             {
                 return StatusCode(400, "You are not admin!");
             }
 
-            var chat = await chatRepo.ReadFullAsync(chatid);
             var message = await repo.ReadAsync(messageid);
 
             chat.Messages.Remove(message);

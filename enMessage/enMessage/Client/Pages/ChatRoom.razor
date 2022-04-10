@@ -23,7 +23,7 @@
             <label>@m.SentBy.Username :</label>
             <div><p>@m.Content</p></div>
             <div><label>@m.SentOn</label></div>
-            
+            <button @onclick="@(async() => await DeleteMessageAsync(m.ID))">Delete message</button>
         </li>
     }
 </ul>
@@ -44,6 +44,7 @@
     protected override async Task OnInitializedAsync()
     {
         await InitializeViewModelsAsync();
+        await SetupTimerAsync();
     }
 
 
@@ -51,7 +52,6 @@
     {
         me = await client.GetFromJsonAsync<UserViewModel>("api/users/" + userID);
         chat = await client.GetFromJsonAsync<ChatViewModel>("api/chats/" + chatID);
-        await SetupTimerAsync();
     }
 
     protected async Task ReloadChatAsync()
@@ -85,8 +85,18 @@
         messageInput = string.Empty;
     }
 
-    protected async Task DeleteMessageAsync(Guid messageid)
+
+    protected async Task DeleteMessageAsync(Guid messageID)
     {
-        
+        var response = await client.DeleteAsync("api/messages/" + userID + "/" + chatID + "/" + messageID);
+        if(response.IsSuccessStatusCode)
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Message deleted successfully!");
+            await ReloadChatAsync();   
+        }
+        else
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Only admins can delete messages! ");          
+        }
     }
 }
