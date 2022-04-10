@@ -5,13 +5,13 @@ namespace enMessage.Shared.Utilities
     public static class MessageUtil
     {
         //Public key
-        public static byte[] EncryptMessage(RSAParameters publicKey, string data)
+        public static string EncryptMessage(RSAParameters publicKey, string data)
         {
             using (RSACryptoServiceProvider csp = new RSACryptoServiceProvider())
             {
                 csp.ImportParameters(publicKey);
                 var bytesData = System.Text.Encoding.Unicode.GetBytes(data);
-                return csp.Encrypt(bytesData, false);
+                return Convert.ToBase64String(csp.Encrypt(bytesData, false));
             }
         }
 

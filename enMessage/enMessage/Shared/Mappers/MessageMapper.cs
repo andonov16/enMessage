@@ -1,5 +1,8 @@
 ﻿using enMessage.Model;
+using enMessage.Shared.Utilities;
 using enMessage.Shared.ViewModels;
+using Newtonsoft.Json;
+using System.Security.Cryptography;
 
 namespace enMessage.Shared.Mappers
 {
@@ -22,11 +25,13 @@ namespace enMessage.Shared.Mappers
             return new MessageViewModel()
             {
                 ID = item.ID,
-                SentIn = ChatMapper.GetChatViewModel(item.SentIn),
+                SentIn = ChatMapper.GetSimpleView(item.SentIn),
                 SentBy = UserMapper.GetAsFriend(item.SentBy),
                 SentOn = item.SentOn,
                 DataType = item.DataType,
-                Content = item.Content
+                Content = MessageUtil.DecryptMessage(
+                    JsonConvert.DeserializeObject<RSAParameters>(item.SentBy.PrivateKey),
+                    Convert.FromBase64String(item.Content))
             };
         }
     }

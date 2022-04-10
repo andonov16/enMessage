@@ -1,74 +1,72 @@
-﻿@page "/chat/{id}"
+﻿@page "/chat/{userid}/{chatid}"
 @using Microsoft.AspNetCore.SignalR.Client
 @using enMessage.Shared.ViewModels
-@inject NavigationManager NavigationManager
-@implements IAsyncDisposable
+@using enMessage.Shared.Utilities
+@using Newtonsoft.Json
+@inject IJSRuntime JsRuntime
+@inject NavigationManager NavManager
+@inject HttpClient client
 
 
+<h3>ChatRoom: @chat.ChatName</h3>
+<h4>User: @me.Username</h4>
 
-<div class="form-group">
-    <label>
-        User:
-        <input @bind="username" />
-    </label>
-</div>
-<div class="form-group">
-    <label>
-        Message:
-        <input @bind="messageInput" size="50" />
-    </label>
-</div>
-<button @onclick="Send" disabled="@(!IsConnected)">Send</button>
+<form @onsubmit="@SendMessage">
+    <input @bind="@messageInput" />
+    <button>Send</button>
+</form>
 
-<hr>
-
-<ul id="messagesList">
-    @foreach (var message in messages)
+<ul>
+    @foreach(var m in chat.Messages)
     {
-        <li>@message</li>
+        <li>
+            <label>@m.SentBy.Username :</label>
+            <div><p>@m.Content</p></div>
+            <div><label>@m.SentOn</label></div>
+        </li>
     }
 </ul>
 
 @code {
     [Parameter]
-    public string ID{ get; set; }
-    private HubConnection? hubConnection;
-    private List<string> messages = new List<string>();
-    private string username;
-    private string? messageInput;
+    public string userID{ get; set; }
+    [Parameter]
+    public string chatID{ get; set; }
+    private UserViewModel me;
+    private ChatViewModel chat;
+    private string messageInput = string.Empty;
+
+
 
     protected override async Task OnInitializedAsync()
     {
-        hubConnection = new HubConnectionBuilder()
-            .WithUrl(NavigationManager.ToAbsoluteUri("/chathub"))
-            .Build();
-
-        hubConnection.On<string, string>("ReceiveMessage", (user, message) =>
-        {
-            var encodedMsg = $"{user}: {message}";
-            messages.Add(encodedMsg);
-            StateHasChanged();
-        });
-
-        await hubConnection.StartAsync();
+        await InitializeViewModelsAsync();
     }
 
-    private async Task Send()
+
+    protected async Task InitializeViewModelsAsync()
     {
-        if (hubConnection is not null)
-        {
-            await hubConnection.SendAsync("SendMessage", username, messageInput);
-        }
+        me = await client.GetFromJsonAsync<UserViewModel>("api/users/" + userID);
+        chat = await client.GetFromJsonAsync<ChatViewModel>("api/chats/" + chatID);
     }
 
-    public bool IsConnected =>
-        hubConnection?.State == HubConnectionState.Connected;
+    protected async Task ReloadChatAsync()
+    {        
+        chat = await client.GetFromJsonAsync<ChatViewModel>("api/chats/" + chatID);
+    }
 
-    public async ValueTask DisposeAsync()
+
+    protected async Task SendMessage()
     {
-        if (hubConnection is not null)
+        if(string.IsNullOrEmpty(messageInput))
         {
-            await hubConnection.DisposeAsync();
+            return;
         }
+
+        var encrypted = messageInput;
+
+        var request = new HttpRequestMessage(HttpMethod.Post, "/api/messages/" + userID +  "/" + chatID + "/text/"+ encrypted);
+        var response = await client.SendAsync(request);
+        await ReloadChatAsync();
     }
 }

@@ -1,5 +1,6 @@
 ﻿@page "/user/{userid}"
 @using enMessage.Shared.ViewModels
+@inject IJSRuntime JsRuntime
 @inject HttpClient client
 @inject NavigationManager NavManager
 
@@ -38,7 +39,7 @@
 
     protected void GoToChatRoom(Guid id)
     {
-        NavManager.NavigateTo("chat/" + id);
+        NavManager.NavigateTo("chat/" +UserId + "/" + id);
     }
 
     protected void GoToCreateChat()

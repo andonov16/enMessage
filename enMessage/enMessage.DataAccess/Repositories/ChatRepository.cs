@@ -16,7 +16,7 @@ namespace enMessage.DataAccess.Repositories
             return await context.Chats
                 .Include(c => c.Users)
                 .Include(c => c.Messages)
-                .Include(c => c.Roles)
+                 //.Include(c => c.Roles)
                 .SingleAsync(c => c.ID == id);
         }
 
@@ -25,7 +25,7 @@ namespace enMessage.DataAccess.Repositories
             return await context.Chats
                 .Include(c => c.Users)
                 .Include(c => c.Messages)
-                .Include(c => c.Roles)
+                //.Include(c => c.Roles)
                 .ToListAsync();
         }
 
