@@ -23,6 +23,7 @@
             <label>@m.SentBy.Username :</label>
             <div><p>@m.Content</p></div>
             <div><label>@m.SentOn</label></div>
+            
         </li>
     }
 </ul>
@@ -36,6 +37,8 @@
     private ChatViewModel chat;
     private string messageInput = string.Empty;
 
+    private System.Threading.Timer? timer;
+
 
 
     protected override async Task OnInitializedAsync()
@@ -48,11 +51,21 @@
     {
         me = await client.GetFromJsonAsync<UserViewModel>("api/users/" + userID);
         chat = await client.GetFromJsonAsync<ChatViewModel>("api/chats/" + chatID);
+        await SetupTimerAsync();
     }
 
     protected async Task ReloadChatAsync()
     {        
         chat = await client.GetFromJsonAsync<ChatViewModel>("api/chats/" + chatID);
+    }
+
+    protected async Task SetupTimerAsync()
+    {
+        timer = new System.Threading.Timer(async (object? stateInfo) =>
+        {
+            await ReloadChatAsync();
+            StateHasChanged();
+        }, new System.Threading.AutoResetEvent(false), 1500, 1500);
     }
 
 
@@ -68,5 +81,12 @@
         var request = new HttpRequestMessage(HttpMethod.Post, "/api/messages/" + userID +  "/" + chatID + "/text/"+ encrypted);
         var response = await client.SendAsync(request);
         await ReloadChatAsync();
+
+        messageInput = string.Empty;
+    }
+
+    protected async Task DeleteMessageAsync(Guid messageid)
+    {
+        
     }
 }
