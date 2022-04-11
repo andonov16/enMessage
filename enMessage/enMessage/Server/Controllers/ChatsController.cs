@@ -80,7 +80,7 @@ namespace enMessage.Server.Controllers
         {
             var me = await userRepo.ReadFullAsync(myId);
             var chat = await repo.ReadFullAsync(chatId);
-            var roles = chat.Roles.Where(r => r.Holder.ID == me.ID);
+            var roles = await roleRepo.FindAsync(r => r.Holder == me && r.ChatRoom == chat);
 
             me.Chats.Remove(chat);
             chat.Users.Remove(me);

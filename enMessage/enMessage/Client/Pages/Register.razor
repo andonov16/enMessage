@@ -6,24 +6,23 @@
 @inject HttpClient client
 @inject NavigationManager NavManager
 
-<h3>Register</h3>
 
 
-<form method="post" onsubmit="@RegisterSubmit">
-    <p>Username:</p>
-    <input @bind="username"/>
 
-    <p>Email:</p>
-    <input @bind="email"/>
+<main class="login-container">
+    <form method="post" onsubmit="@RegisterSubmit">
+        <h3 class="register">Register</h3>
+        <input @bind="username" placeholder="username"/>
+        <input @bind="email" placeholder="email"/>
+        <input @bind="password" type="password" placeholder="password"/>
+        <input @bind="confirmPassword" type="password" placeholder="confirm password"/>
 
-    <p>Password:</p>
-    <input @bind="password" type="password"/>
+        <button>Register</button>
+        <p class="message">Already have account?</p>
+        <a href="/">Click here!</a>
+    </form>
+</main>
 
-    <p>Confirm Password:</p>
-    <input @bind="confirmPassword" type="password"/>
-
-    <input type="submit"/>
-</form>
 
 
 

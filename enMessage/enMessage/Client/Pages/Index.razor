@@ -8,17 +8,22 @@
 @inject NavigationManager NavManager
 
 
-<h1>Login</h1>
+<main class="login-container">
 
-<form method="get" onsubmit="@LoginSubmit">
-    <p>Email:</p>
-    <input @bind = "email"/>
-    <p>Password:</p>
-    <input @bind = "password" type="password"/>
-    <input type="submit"/>
-</form>
 
-<a href="/register"><p>Don`t have account yet?</p></a>
+        <form method="get" onsubmit="@LoginSubmit">
+            <h1 class="login">Login</h1>
+
+            <input @bind = "email" placeholder="email"/>
+
+            <input @bind = "password" type="password" placeholder="password"/>
+            <button>Login</button>
+            
+            <p class="message">Don`t have account yet?</p>
+            <a href="/register">Click here!</a>
+        </form>
+
+</main>
 
 
 @code{
