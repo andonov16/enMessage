@@ -27,6 +27,8 @@ builder.Services.AddRazorPages();
 builder.Services.AddSignalR();
 
 
+
+
 //add swagger
 builder.Services.AddSwaggerGen();
 
@@ -37,6 +39,10 @@ builder.Services.AddResponseCompression(opts =>
         new[] { "application/octet-stream" });
 });
 
+var json = new JsonSerializerSettings();
+json.Formatting = Formatting.Indented;
+json.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+JsonConvert.DefaultSettings = () => json;
 
 
 var app = builder.Build();
