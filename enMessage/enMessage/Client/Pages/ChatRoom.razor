@@ -8,8 +8,8 @@
 @inject HttpClient client
 
 
-<h3>ChatRoom: @chat.ChatName</h3>
-<h4>User: @me.Username</h4>
+<h3>ChatRoom: @chatname</h3>
+<h4>User: @username</h4>
 
 
 <form @onsubmit="@SendMessage">
@@ -18,14 +18,17 @@
 </form>
 
 <ul>
-    @foreach(var m in chat.Messages)
+    @if(me != null)
     {
-        <li>
-            <label>@m.SentBy.Username :</label>
-            <div><p>@m.Content</p></div>
-            <div><label>@m.SentOn</label></div>
-            <button @onclick="@(async() => await DeleteMessageAsync(m.ID))">Delete message</button>
-        </li>
+        @foreach(var m in chat.Messages)
+        {
+            <li>
+                <label>@m.SentBy.Username :</label>
+                <div><p>@m.Content</p></div>
+                <div><label>@m.SentOn</label></div>
+                <button @onclick="@(async() => await DeleteMessageAsync(m.ID))">Delete message</button>
+            </li>
+        }
     }
 </ul>
 
@@ -37,6 +40,9 @@
     private UserViewModel me;
     private ChatViewModel chat;
     private string messageInput = string.Empty;
+    private string username = string.Empty;
+    private string chatname = string.Empty;
+
 
     private System.Threading.Timer? timer;
 
@@ -53,6 +59,8 @@
     {
         me = await client.GetFromJsonAsync<UserViewModel>("api/users/" + userID);
         chat = await client.GetFromJsonAsync<ChatViewModel>("api/chats/" + chatID);
+        username = me.Username;
+        chatname = chat.ChatName;
     }
 
     protected async Task ReloadChatAsync()

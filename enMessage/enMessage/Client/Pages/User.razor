@@ -11,30 +11,35 @@
 </div>
 
 <h3>UserControl</h3>
-<p>@me.Username</p>
+<p>username</p>
 <p>@UserId</p>
 
 <div>
     <h4>Chats:</h4>
 
-    @foreach(var chat in me.Chats.OrderByDescending(c => c.LastInteraction))
+    @if(@me != null)
     {
-        <div>
-            <button @onclick="@(() => GoToChatRoom(chat.ID))">@chat.ChatName</button>
-            <label>@chat.LastInteraction</label>
-       </div>
+        @foreach(var chat in me.Chats.OrderByDescending(c => c.LastInteraction))
+        {
+            <div>
+                <button @onclick="@(() => GoToChatRoom(chat.ID))">@chat.ChatName</button>
+                <label>@chat.LastInteraction</label>
+           </div>
+        }
     }
 </div>
 
 @code {
     [Parameter]
     public string UserId { get; set; }
+    private string username = string.Empty;
     private UserViewModel me;
 
 
     protected override async Task OnInitializedAsync()
     {
         me = await client.GetFromJsonAsync<UserViewModel>("api/users/" + UserId);
+        username = me.Username;
     }
 
     protected void GoToChatRoom(Guid id)

@@ -10,8 +10,7 @@
     <button onclick="@Logout">Logout</button>
 </div>
 
-<p>@me.Username</p>
-<p>@me.ID</p>
+<p>@myUsername</p>
 
 <form onsubmit = "@CreateChatAsync">
     <label>Chat name:</label>
@@ -19,9 +18,12 @@
     
     <div>
         <select multiple>
-            @foreach(var fr in me.Friends)
+            @if(@me != null)
             {
-                <option onclick="@(() => UsernameClicked(fr.Username))">@fr.Username</option>
+                @foreach(var fr in me.Friends)
+                {
+                    <option onclick="@(() => UsernameClicked(fr.Username))">@fr.Username</option>
+                }
             }
         </select>
     </div>
@@ -33,12 +35,14 @@
     public string UserId { get; set; }
     private UserViewModel me;
     private string chatName;
+    private string myUsername = string.Empty;
     private HashSet<string> usernames;
 
     protected override async Task OnInitializedAsync()
     {
         usernames = new HashSet<string>();
         me = await client.GetFromJsonAsync<UserViewModel>("api/users/" + UserId);
+        myUsername = me.Username;
         usernames.Add(me.Username);
     }
 

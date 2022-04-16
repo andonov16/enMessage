@@ -4,7 +4,7 @@
 @inject HttpClient client
 @inject NavigationManager NavManager
 
-<h3>@me.Username `s Friends</h3>
+<h3>@username `s Friends</h3>
 <div class="sidebar">
     <button onclick="@GoToUser">User</button>
     <button onclick="@Logout">Logout</button>
@@ -15,9 +15,12 @@
 <div>
     <h3>Friends:</h3>
     <ul>
-        @foreach(var friend in me.Friends)
+        @if(me != null)
         {
-            <li>@friend.Username</li>
+            @foreach(var friend in me.Friends)
+            {
+                <li>@friend.Username</li>
+            }
         }
     </ul>
 </div>
@@ -36,14 +39,17 @@
 
 <div>
     <ul>
-        @foreach(var req in me.Requests)
+        @if(me != null)
         {
-            var currentRequestID = req.ID;
-            <li>
-                <span>@req.RequestedFrom</span>
-                <span><button @onclick="@(e => AcceptRequestAsync(req.ID.ToString()))">Accept</button></span>
-                <span><button @onclick="@(e => DeclineRequestAsync(req.ID.ToString()))">Decline</button></span>
-            </li>
+            @foreach(var req in me.Requests)
+            {
+                var currentRequestID = req.ID;
+                <li>
+                    <span>@req.RequestedFrom</span>
+                    <span><button @onclick="@(e => AcceptRequestAsync(req.ID.ToString()))">Accept</button></span>
+                    <span><button @onclick="@(e => DeclineRequestAsync(req.ID.ToString()))">Decline</button></span>
+                </li>
+            }
         }
     </ul>
 </div>
@@ -52,11 +58,13 @@
     [Parameter]
     public string UserId { get; set; }
     private UserViewModel me;
+    private string username = string.Empty;
     private string requestUsername;
 
     protected override async Task OnInitializedAsync()
     {
         me = await client.GetFromJsonAsync<UserViewModel>("api/users/" + UserId);
+        username = me.Username;
     }
 
     protected async void SendRequestAsync()
