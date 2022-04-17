@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yu6uPnM6K6hvklxAsS1W2f0jgl7vds7R8OCtieNf6uI=",
+  "Hash": "l1G3X4w9iB2o0YEkJ99DKJRlpKiBtxLxoA84jFIfWDk=",
   "Source": "enMessage.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -7531,12 +7531,12 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage\\Client\\wwwroot\\css\\formstyle.css",
+      "Identity": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage\\Client\\wwwroot\\css\\login_register.css",
       "SourceId": "enMessage.Client",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage\\Client\\wwwroot\\",
       "BasePath": "/",
-      "RelativePath": "css/formstyle.css",
+      "RelativePath": "css/login_register.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -7545,7 +7545,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\formstyle.css"
+      "OriginalItemSpec": "wwwroot\\css\\login_register.css"
     },
     {
       "Identity": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",

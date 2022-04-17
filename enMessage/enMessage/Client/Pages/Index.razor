@@ -8,10 +8,8 @@
 @inject NavigationManager NavManager
 
 
-<main class="login-container">
-
-
-        <form method="get" onsubmit="@LoginSubmit">
+<article class="login-container">
+        <form class="login-form" method="get" onsubmit="@LoginSubmit">
             <h1 class="login">Login</h1>
 
             <input @bind = "email" placeholder="email"/>
@@ -22,8 +20,7 @@
             <p class="message">Don`t have account yet?</p>
             <a href="/register">Click here!</a>
         </form>
-
-</main>
+</article>
 
 
 @code{
