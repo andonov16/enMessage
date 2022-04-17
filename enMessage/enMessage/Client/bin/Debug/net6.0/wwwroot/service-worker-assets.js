@@ -1,7 +1,7 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-t9XxMBedqlidLxxf2+nh7qapn+EcQkGY1z6NDKGhvfM=",
+      "hash": "sha256-\/YWkXqBZqM5ga+36ep3XnduAcmVJvSiITpn92YBXowg=",
       "url": "css\/app.css"
     },
     {
@@ -13,11 +13,15 @@
       "url": "css\/bootstrap\/bootstrap.min.css.map"
     },
     {
+      "hash": "sha256-1OjnzQcsC2G+ZUUoGNOLElWtWh3ZsIV50D6Dqn8Zzuc=",
+      "url": "css\/chatroom.css"
+    },
+    {
       "hash": "sha256-zkUREyjy7tjmYNJTP\/K2Yhx1jXC5OS9HdPoiY1BD8Go=",
       "url": "css\/login_register.css"
     },
     {
-      "hash": "sha256-2MgkcJIsOPC5VGOmWLIqFIt8wgfG8QGV3qvaGGbEP94=",
+      "hash": "sha256-HT+ePULgUEUrhmmVi55cDu4YkKh7wjQ\/o\/ZXKibWAnU=",
       "url": "css\/nav_bar.css"
     },
     {
@@ -69,7 +73,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-N4tHHFmUibitY2GGEX\/wjXj\/IAaevzFYgdWT7yJ2bXY=",
+      "hash": "sha256-DnM\/CNkFj\/bmpp+nt4N1oN5p2Ti8E0K3wHXxKX\/8Ez8=",
       "url": "index.html"
     },
     {
@@ -933,11 +937,11 @@
       "url": "_framework\/enMessage.Model.pdb"
     },
     {
-      "hash": "sha256-iuCNVRjpSFZZ2OM7yR3v91V9F8unrY8orMxfynz34TQ=",
+      "hash": "sha256-VsXJvnc6j\/zbxbpbUw7ZJOMnz8M6jeaXUJFyxOviXm8=",
       "url": "_framework\/enMessage.Client.dll"
     },
     {
-      "hash": "sha256-NQjTWmTrGcpSjwo2szzj98D\/llieabbHaBMmIMaMh4s=",
+      "hash": "sha256-3EByGnwl0PuRsgO+Hz1sa3ePThKYaiFBVx+0xbuMKP4=",
       "url": "_framework\/enMessage.Client.pdb"
     },
     {
@@ -945,9 +949,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-RdQwthH+CX9AQg3dVyDnHfGo5WesJpYpehICNl6fNbA=",
+      "hash": "sha256-UlzY9e64Tm0aePkYmjLRbosDud8qRDoXMFnVN3ddTdo=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "qoyccKPx"
+  "version": "2F\/iT01f"
 };

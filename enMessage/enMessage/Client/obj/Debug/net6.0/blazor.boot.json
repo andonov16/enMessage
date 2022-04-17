@@ -211,7 +211,7 @@
       "System.Private.CoreLib.dll": "sha256-9NtEbYixyog7vUmeYXyyqzfBXUYl8wxoVQ26Ji7sNRg=",
       "enMessage.Model.dll": "sha256-+hHxl\/hwWolgDy0dlxKVf\/aKnJqCYgFZEz5ViCLYruY=",
       "enMessage.Shared.dll": "sha256-7O1NhKqfaAenzXYGoYOD+FVWACNxrU6cg59Q3PHi4OU=",
-      "enMessage.Client.dll": "sha256-TxCwxeitop7T3923YAUasiLaay7BAQ9K6PIMc1Pmnng="
+      "enMessage.Client.dll": "sha256-iDPu3OMRe6rVzJLrVuVAar7dZNfNzjtYOeWGk0FhpHs="
     },
     "extensions": null,
     "lazyAssembly": null,
@@ -219,7 +219,7 @@
     "pdb": {
       "enMessage.Shared.pdb": "sha256-eMZVKr96RqWpLdPbp4NdhU6mgpPunjHSxIp9B7qd9bY=",
       "enMessage.Model.pdb": "sha256-XvcRInxJq8NeQTYlY6YEW7g3g0vCk2vySkpKn\/20dRc=",
-      "enMessage.Client.pdb": "sha256-dyPLTiZ5qrzPMfl+JSzwRxJbNnNXnsvutYw7BrXwupQ="
+      "enMessage.Client.pdb": "sha256-xp7lwdVDmCKtJosFLQRQd4LiOX+nNQ7PgOI8ErJjxSI="
     },
     "runtime": {
       "dotnet.6.0.1.zejopyed0g.js": "sha256-awQsJ\/WxYhouHPuE+i3eJqjA4XClQlr2rD6nKvW80ww=",

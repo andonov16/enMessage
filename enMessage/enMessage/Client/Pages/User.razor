@@ -5,8 +5,8 @@
 @inject NavigationManager NavManager
 
 
-<div id="container">
-	<aside>
+<div class="container">
+    <aside>
         <nav class="grid-container">
             <button class="nav-button active-button">Home</button>
             <button class="nav-button" onclick="@GoToCreateChat">Create chat</button>
@@ -14,34 +14,40 @@
             <button class="nav-button" onclick="@Logout">Logout</button>
         </nav>
 
-		@if(me != null){
-			<ul>
-				@foreach(var chat in me.Chats.OrderByDescending(c => c.LastInteraction))
-				{									
-					<li @onclick="@(() => GoToChatRoom(chat.ID))">
-						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_01.jpg" alt="">
-							<div>
-								<h2>@chat.ChatName</h2>
-								<h3>
-									<span class="status green"></span>
-									@chat.LastInteraction
-								</h3>
-						</div>
-					</li>
-				}
-			</ul>
-		}
-	</aside>
+	    @if(me != null){
+		    <ul>
+			    @foreach(var chat in me.Chats.OrderByDescending(c => c.LastInteraction))
+			    {									
+				    <li @onclick="@(() => GoToChatRoom(chat.ID))">
+					    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_01.jpg" alt="">
+						    <div>
+							    <h2>@chat.ChatName</h2>
+							    <h3>
+								    <span class="status green"></span>
+								    @chat.LastInteraction
+							    </h3>
+					    </div>
+				    </li>
+			    }
+		    </ul>
+	    }
+    </aside>
+
+    <main>
+        @if(me != null && !string.IsNullOrEmpty(chatID))
+        {
+            <ChatRoom chatID="@chatID" userID="@UserId"/>
+        }
+    </main>
+
 </div>
-
-
 
 @code {
     [Parameter]
     public string UserId { get; set; }
     private string username = string.Empty;
     private UserViewModel me;
-
+    private string chatID = string.Empty;
 
     protected override async Task OnInitializedAsync()
     {
@@ -51,7 +57,8 @@
 
     protected void GoToChatRoom(Guid id)
     {
-        NavManager.NavigateTo("chat/" +UserId + "/" + id);
+        //NavManager.NavigateTo("chat/" +UserId + "/" + id);
+        this.chatID = id.ToString();
     }
 
     protected void GoToCreateChat()

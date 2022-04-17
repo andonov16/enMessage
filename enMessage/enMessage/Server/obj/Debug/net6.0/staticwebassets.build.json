@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "josRNVl22NDq5duqM/5nBXYc8WQOWhvvl0LwdSVCo/M=",
+  "Hash": "4vFr4tb2lrErp5ePpw1FsZmDucMQ+Nmhm5S0JbqtbK4=",
   "Source": "enMessage.Server",
   "BasePath": "_content/enMessage.Server",
   "Mode": "Default",
@@ -7490,6 +7490,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Identity": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage\\Client\\wwwroot\\css\\chatroom.css",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/chatroom.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\chatroom.css"
     },
     {
       "Identity": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage\\Client\\wwwroot\\css\\login_register.css",

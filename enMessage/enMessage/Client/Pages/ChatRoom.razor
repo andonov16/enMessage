@@ -8,29 +8,65 @@
 @inject HttpClient client
 
 
-<h3>ChatRoom: @chatname</h3>
-<h4>User: @username</h4>
 
 
-<form @onsubmit="@SendMessage">
-    <input @bind="@messageInput" />
-    <button>Send</button>
-</form>
 
-<ul>
-    @if(me != null)
-    {
+@if(me != null && chat != null)
+{
+    <header>
+		<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_01.jpg" alt="">
+		<div>
+			<h2>@chat.ChatName</h2>
+			<h3>@chat.LastInteraction</h3>
+		</div>
+	</header>
+
+
+	<ul id="chat">
+
         @foreach(var m in chat.Messages)
         {
-            <li>
-                <label>@m.SentBy.Username :</label>
-                <div><p>@m.Content</p></div>
-                <div><label>@m.SentOn</label></div>
-                <button @onclick="@(async() => await DeleteMessageAsync(m.ID))">Delete message</button>
-            </li>
+            if(m.SentBy.ID == me.ID)
+            {
+                 <li class="me">
+                     <div class="entete">
+				        <h2>@m.SentBy.Username</h2>
+			        </div>
+
+                    <div class="entete">
+				        <h3>@m.SentOn</h3>
+                    </div>
+
+
+			        <div class="message">
+				        @m.Content
+                        <button @onclick="@(async() => await DeleteMessageAsync(m.ID))">Delete message</button>
+			        </div>
+                 </li>
+            }
+            else
+            {
+                 <li class="you">
+                     <div class="entete">
+				        <h2>@m.SentBy.Username</h2>
+				        <h3>@m.SentOn</h3>
+			        </div>
+			        <div class="message">
+				        @m.Content
+                    <button @onclick="@(async() => await DeleteMessageAsync(m.ID))">Delete message</button>
+			        </div>
+                 </li> 
+            }
         }
-    }
-</ul>
+    </ul>
+	<footer>
+        <form @onsubmit="@SendMessage">
+            <textarea @bind="@messageInput" />
+            <button>Send</button>
+        </form>
+	</footer>
+}
+
 
 @code {
     [Parameter]
