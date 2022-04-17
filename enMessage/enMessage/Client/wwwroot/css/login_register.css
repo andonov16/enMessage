@@ -69,13 +69,14 @@ a {
     font-size: 16px;
 }
 
+
+
 .login, .register {
-    color: red;
+    color: #F1E9DB;
     font-size: 4.3em;
     justify-content: center;
     display: flex;
     margin: 30px;
     font-weight: bold;
     transition: .5s ease-in-out;
-    color: #048A81;
 }

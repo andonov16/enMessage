@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SKXwzkinU5K+ZGiMqq4gel5xRKZsDff+WG3yEba9LKE=",
+  "Hash": "josRNVl22NDq5duqM/5nBXYc8WQOWhvvl0LwdSVCo/M=",
   "Source": "enMessage.Server",
   "BasePath": "_content/enMessage.Server",
   "Mode": "Default",
@@ -7507,6 +7507,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\login_register.css"
+    },
+    {
+      "Identity": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage\\Client\\wwwroot\\css\\nav_bar.css",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Project",
+      "ContentRoot": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/nav_bar.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\nav_bar.css"
     },
     {
       "Identity": "D:\\Projects\\_GitHubRepos\\enMessage\\enMessage\\enMessage\\Client\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",

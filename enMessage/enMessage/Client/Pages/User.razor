@@ -4,30 +4,37 @@
 @inject HttpClient client
 @inject NavigationManager NavManager
 
-<div class="sidebar">
-    <button onclick="@GoToCreateChat">Create chat</button>
-    <button onclick="@GoToFriends">Friends</button>
-    <button onclick="@Logout">Logout</button>
+
+<div id="container">
+	<aside>
+        <nav class="grid-container">
+            <button class="nav-button active-button">Home</button>
+            <button class="nav-button" onclick="@GoToCreateChat">Create chat</button>
+            <button class="nav-button" onclick="@GoToFriends">Friends</button>
+            <button class="nav-button" onclick="@Logout">Logout</button>
+        </nav>
+
+		@if(me != null){
+			<ul>
+				@foreach(var chat in me.Chats.OrderByDescending(c => c.LastInteraction))
+				{									
+					<li @onclick="@(() => GoToChatRoom(chat.ID))">
+						<img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/chat_avatar_01.jpg" alt="">
+							<div>
+								<h2>@chat.ChatName</h2>
+								<h3>
+									<span class="status green"></span>
+									@chat.LastInteraction
+								</h3>
+						</div>
+					</li>
+				}
+			</ul>
+		}
+	</aside>
 </div>
 
-<h3>UserControl</h3>
-<p>username</p>
-<p>@UserId</p>
 
-<div>
-    <h4>Chats:</h4>
-
-    @if(@me != null)
-    {
-        @foreach(var chat in me.Chats.OrderByDescending(c => c.LastInteraction))
-        {
-            <div>
-                <button @onclick="@(() => GoToChatRoom(chat.ID))">@chat.ChatName</button>
-                <label>@chat.LastInteraction</label>
-           </div>
-        }
-    }
-</div>
 
 @code {
     [Parameter]
