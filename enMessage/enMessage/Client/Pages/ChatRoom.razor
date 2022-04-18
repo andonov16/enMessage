@@ -60,7 +60,7 @@
         }
     </ul>
 	<footer>
-        <form @onsubmit="@SendMessage">
+        <form @onsubmit="@SendMessage" class="message-field">
             <textarea @bind="@messageInput" />
             <button>Send</button>
         </form>

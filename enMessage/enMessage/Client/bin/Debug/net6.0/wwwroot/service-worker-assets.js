@@ -1,11 +1,11 @@
 ﻿self.assetsManifest = {
   "assets": [
     {
-      "hash": "sha256-\/YWkXqBZqM5ga+36ep3XnduAcmVJvSiITpn92YBXowg=",
+      "hash": "sha256-g2NnlX5mJ0gfEb8h6VAQno5koO1xi7LwNhBty8ot2xY=",
       "url": "css\/app.css"
     },
     {
-      "hash": "sha256-z8OR40MowJ8GgK6P89Y+hiJK5+cclzFHzLhFQLL92bg=",
+      "hash": "sha256-SiIVMGgRhdXjKSTIddX7mh9IbOXVcwQWc7\/p4nS6D\/0=",
       "url": "css\/bootstrap\/bootstrap.min.css"
     },
     {
@@ -13,7 +13,7 @@
       "url": "css\/bootstrap\/bootstrap.min.css.map"
     },
     {
-      "hash": "sha256-1OjnzQcsC2G+ZUUoGNOLElWtWh3ZsIV50D6Dqn8Zzuc=",
+      "hash": "sha256-UMslQrncPywwCch0yXC+2kI8NDuSF4H04Ma6XMkdaEE=",
       "url": "css\/chatroom.css"
     },
     {
@@ -25,7 +25,7 @@
       "url": "css\/nav_bar.css"
     },
     {
-      "hash": "sha256-+Q44zfEaCMmXduni5Td+IgCbk8sSUQwES2nWs+KKQz0=",
+      "hash": "sha256-jA4J4h\/k76zVxbFKEaWwFKJccmO0voOQ1DbUW+5YNlI=",
       "url": "css\/open-iconic\/FONT-LICENSE"
     },
     {
@@ -41,7 +41,7 @@
       "url": "css\/open-iconic\/font\/fonts\/open-iconic.otf"
     },
     {
-      "hash": "sha256-oUpLdS+SoLJFwf4bzA3iKD7TCm66oLkTpAQlVJ2s1wc=",
+      "hash": "sha256-+P1oQ5jPzOVJGC52E1oxGXIXxxCyMlqy6A9cNxGYzVk=",
       "url": "css\/open-iconic\/font\/fonts\/open-iconic.svg"
     },
     {
@@ -53,11 +53,11 @@
       "url": "css\/open-iconic\/font\/fonts\/open-iconic.woff"
     },
     {
-      "hash": "sha256-s\/Is6Ey6jfNAEfXUIOyHrXXX+RcA8hzchYnuOIWUMl4=",
+      "hash": "sha256-aF5g\/izareSj02F3MPSoTGNbcMBl9nmZKDe04zjU\/ss=",
       "url": "css\/open-iconic\/ICON-LICENSE"
     },
     {
-      "hash": "sha256-9wdNXQFE78LCNHo+Hq2eXMTx+YBf2gjsufVTJc8dAV0=",
+      "hash": "sha256-p\/oxU91iBE+uaDr3kYOyZPuulf4YcPAMNIz6PRA\/tb0=",
       "url": "css\/open-iconic\/README.md"
     },
     {
@@ -77,7 +77,7 @@
       "url": "index.html"
     },
     {
-      "hash": "sha256-+JCB69MBH5B0LPLNfO1FKcBrdxYoGpcTeHJLtEb+t3Q=",
+      "hash": "sha256-x2o1\/GniNNSAu2qTkPvh\/F\/ZOOy\/dfaku0fTg1jVCmg=",
       "url": "manifest.json"
     },
     {
@@ -893,8 +893,8 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-awQsJ\/WxYhouHPuE+i3eJqjA4XClQlr2rD6nKvW80ww=",
-      "url": "_framework\/dotnet.6.0.1.zejopyed0g.js"
+      "hash": "sha256-BZrWm7vUIfCJHf4Y0NJcrjaBGoOkqbQf2rkoy8qY\/6o=",
+      "url": "_framework\/dotnet.6.0.1.hnq6iydkfw.js"
     },
     {
       "hash": "sha256-2kYo2V\/aZ7htYEvY5PVJlrMYhFf1jH8\/VS+SP7B7QUg=",
@@ -921,27 +921,27 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-+hHxl\/hwWolgDy0dlxKVf\/aKnJqCYgFZEz5ViCLYruY=",
+      "hash": "sha256-I3Mj5SD+Pey9XskdulXQ0gLuaA7uJMnszeEAHvbGm7U=",
       "url": "_framework\/enMessage.Model.dll"
     },
     {
-      "hash": "sha256-7O1NhKqfaAenzXYGoYOD+FVWACNxrU6cg59Q3PHi4OU=",
+      "hash": "sha256-Fxu8lcg1MdtIqpeOrgUYxm3bM7OC9pCBlV1MQbXZRcI=",
       "url": "_framework\/enMessage.Shared.dll"
     },
     {
-      "hash": "sha256-eMZVKr96RqWpLdPbp4NdhU6mgpPunjHSxIp9B7qd9bY=",
+      "hash": "sha256-m1CIDYJU+UKF3Q\/SByKoHP52xugs6LH5b0Gp9qfq2Sg=",
       "url": "_framework\/enMessage.Shared.pdb"
     },
     {
-      "hash": "sha256-XvcRInxJq8NeQTYlY6YEW7g3g0vCk2vySkpKn\/20dRc=",
+      "hash": "sha256-mGgcdEA+YzGRWvTxWAMB4hkCZlqbhVfjN7CIS0EGGR8=",
       "url": "_framework\/enMessage.Model.pdb"
     },
     {
-      "hash": "sha256-VsXJvnc6j\/zbxbpbUw7ZJOMnz8M6jeaXUJFyxOviXm8=",
+      "hash": "sha256-4Feb68UC2EWQYhjvPu\/0XkpM2Ew+RuSpPU\/ctx8JHeU=",
       "url": "_framework\/enMessage.Client.dll"
     },
     {
-      "hash": "sha256-3EByGnwl0PuRsgO+Hz1sa3ePThKYaiFBVx+0xbuMKP4=",
+      "hash": "sha256-XUqi4\/3AtM+0hqF5nG2XBpanBzQ66J9YlN66ONa4gp0=",
       "url": "_framework\/enMessage.Client.pdb"
     },
     {
@@ -949,9 +949,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-UlzY9e64Tm0aePkYmjLRbosDud8qRDoXMFnVN3ddTdo=",
+      "hash": "sha256-vlqfSmox7fDZkRkR2xq7lpXWske35Ep1Xrv7LX01EFo=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "2F\/iT01f"
+  "version": "6M3OrKU2"
 };

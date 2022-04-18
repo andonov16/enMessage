@@ -1,14 +1,26 @@
 ﻿main {
-    width: 75vw;
+    display: flex !important;
+    flex-direction: column;
     height: 100vh;
+    width: 100%;
     display: inline-block;
     font-size: 15px;
     vertical-align: top;
 }
 
-.green {
-    background-color: #58b666;
+.message-field {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
 }
+
+    .message-field textarea{
+        margin: 0 !important;
+    }
+
+    .green {
+        background-color: #58b666;
+    }
 .blue {
     background-color: #048A81;
     margin-right: 0;
@@ -52,16 +64,15 @@ main header {
     }
 
 #chat {
+    margin:0 1rem;
     background-color: white;
     padding-left: 0;
     padding: 0;
-    margin: 0;
     list-style-type: none;
     overflow-y: scroll;
-    height: 75vh;
-    width: inherit;
     border-top: 2px solid #fff;
     border-bottom: 2px solid #fff;
+    flex-grow:1;
 }
 
     #chat li {
