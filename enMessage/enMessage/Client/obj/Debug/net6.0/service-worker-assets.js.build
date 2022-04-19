@@ -13,7 +13,7 @@
       "url": "css\/bootstrap\/bootstrap.min.css.map"
     },
     {
-      "hash": "sha256-UMslQrncPywwCch0yXC+2kI8NDuSF4H04Ma6XMkdaEE=",
+      "hash": "sha256-4MDEXUIgBe18ABLKeJ1BigvH2qSwgY5mrVHMqLWnWwQ=",
       "url": "css\/chatroom.css"
     },
     {
@@ -937,11 +937,11 @@
       "url": "_framework\/enMessage.Model.pdb"
     },
     {
-      "hash": "sha256-4Feb68UC2EWQYhjvPu\/0XkpM2Ew+RuSpPU\/ctx8JHeU=",
+      "hash": "sha256-GxXchlhLRnjodua6kA\/JgDi1B4jfVeMRMILd71CDnIk=",
       "url": "_framework\/enMessage.Client.dll"
     },
     {
-      "hash": "sha256-XUqi4\/3AtM+0hqF5nG2XBpanBzQ66J9YlN66ONa4gp0=",
+      "hash": "sha256-Bzrp1PQGagmz7rtwDJugjU7g+vWYNSqZt0I+31NvRe8=",
       "url": "_framework\/enMessage.Client.pdb"
     },
     {
@@ -949,9 +949,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-vlqfSmox7fDZkRkR2xq7lpXWske35Ep1Xrv7LX01EFo=",
+      "hash": "sha256-WRNWmP\/vyjCg2qT0FBoOKhlZXRepD7qDbdbNsm4hST0=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "6M3OrKU2"
+  "version": "ALc5oqDx"
 };
