@@ -1,0 +1,17 @@
+﻿.friend-form {
+    margin-top: 2rem;
+}
+
+.friends-holder {
+    min-width: 40%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: auto auto;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.friend-added {
+    background-color: green!important;
+}

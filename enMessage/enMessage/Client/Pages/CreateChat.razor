@@ -4,31 +4,38 @@
 @inject HttpClient client
 @inject NavigationManager NavManager
 
-<h3>CreateChat</h3>
-<div class="sidebar">
-    <button onclick="@GoToFriends">Friends</button>
-    <button onclick="@Logout">Logout</button>
+<div class="container">
+    <aside>
+        <nav class="grid-container">
+            <button class="nav-button" onclick="@GoToHome">Home</button>
+            <button class="nav-button active-button">Create chat</button>
+            <button class="nav-button" onclick="@GoToFriends">Friends</button>
+            <button class="nav-button" onclick="@Logout">Logout</button>
+        </nav>
+    </aside>
+
+    <main>
+
+
+        <form onsubmit = "@CreateChatAsync" class="login-form friend-form">
+            <input @bind="@chatName" placeholder="chat name"/>
+   
+            <button>Create chat</button>
+        </form>
+
+
+        <div class="friends-holder login-form">
+                    @if(@me != null)
+                    {
+                        @foreach(var fr in me.Friends)
+                        {
+                            <button class="friend-button" onclick="@(() => UsernameClicked(fr.Username))">@fr.Username</button>
+                        }
+                    }
+            </div>
+    </main>
 </div>
 
-<p>@myUsername</p>
-
-<form onsubmit = "@CreateChatAsync">
-    <label>Chat name:</label>
-    <input @bind="@chatName"/>
-    
-    <div>
-        <select multiple>
-            @if(@me != null)
-            {
-                @foreach(var fr in me.Friends)
-                {
-                    <option onclick="@(() => UsernameClicked(fr.Username))">@fr.Username</option>
-                }
-            }
-        </select>
-    </div>
-    <input type="submit"/>
-</form>
 
 @code {
     [Parameter]
@@ -109,6 +116,10 @@
     }
 
 
+    protected void GoToHome()
+    {
+        NavManager.NavigateTo("user/" + UserId);
+    }
 
     protected void GoToFriends()
     {
