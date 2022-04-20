@@ -1,0 +1,39 @@
+﻿.friend-username {
+    width: 70px;
+    color: white;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+}
+
+.friend-panel{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.friend-title{
+    font-size: 2rem;
+}
+
+.request-sender-container{
+    height:36vh;
+}
+
+.friends-wrapper {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.friend-holder {
+    background-color: #172A3A;
+    margin: 2rem;
+    max-width: 400px;
+    height: 400px;
+    overflow-y: scroll
+}
+
+.friend-request {
+    display: grid;
+    grid-template-columns: 50% auto auto;
+}

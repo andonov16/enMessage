@@ -1,58 +1,69 @@
-﻿@page "/friends/{userid}"
+﻿
+@page "/friends/{userid}"
 @using enMessage.Shared.ViewModels
 @inject IJSRuntime JsRuntime
 @inject HttpClient client
 @inject NavigationManager NavManager
 
-<h3>@username `s Friends</h3>
-<div class="sidebar">
-    <button onclick="@GoToUser">User</button>
-    <button onclick="@Logout">Logout</button>
+<div class="container">
+    <aside>
+        <nav class="grid-container">
+            <button class="nav-button" onclick="@GoToHome">Home</button>
+            <button class="nav-button">Create chat</button>
+            <button class="nav-button active-button" onclick="@GoToFriends">Friends</button>
+            <button class="nav-button" onclick="@Logout">Logout</button>
+        </nav>
+    </aside>
+
+    <main>
+        <div class="login-container request-sender-container">
+            <form class="login-form" onsubmit="@SendRequestAsync">
+                <input @bind = "requestUsername" placeholder="username"/>
+                <button>Send friend request</button>
+            </form>
+
+        </div>
+
+        <div class="friend-panel">
+            <div class="friends-wrapper">
+                <ul class="friend-holder">
+                    @if(me != null)
+                    {
+                        <h3 class="login friend-title">Requests</h3>
+                        @foreach(var req in me.Requests)
+                        {
+                            var currentRequestID = req.ID;
+                            <li class = "friend-request">
+                                <span class="friend-username">@req.RequestedFrom</span>
+                                <span><button class="btn-success" @onclick="@(e => AcceptRequestAsync(req.ID.ToString()))">Accept</button></span>
+                                <span><button class="btn-danger" @onclick="@(e => DeclineRequestAsync(req.ID.ToString()))">Decline</button></span>
+                            </li>
+                        }
+                    }
+                </ul>
+            </div>
+
+    
+            <div class="friends-wrapper">
+                <ul class="friend-holder">
+                    @if(me != null)
+                    {
+                        <h3 class="login friend-title">Friends</h3>
+                        @foreach(var friend in me.Friends)
+                        {
+                            <li class = "friend-request friend-username">@friend.Username</li>
+                        }
+                    }
+                </ul>
+            </div>
+        </div>
+    </main>
 </div>
 
 
 
-<div>
-    <h3>Friends:</h3>
-    <ul>
-        @if(me != null)
-        {
-            @foreach(var friend in me.Friends)
-            {
-                <li>@friend.Username</li>
-            }
-        }
-    </ul>
-</div>
 
 
-
-<h3>Friend requests:</h3>
-<div>
-    <form onsubmit="@SendRequestAsync">
-        <p>Send friend request to:</p>
-        <p>Username:</p>
-        <input @bind = "requestUsername"/>
-        <input type = "submit" />
-    </form>
-</div>
-
-<div>
-    <ul>
-        @if(me != null)
-        {
-            @foreach(var req in me.Requests)
-            {
-                var currentRequestID = req.ID;
-                <li>
-                    <span>@req.RequestedFrom</span>
-                    <span><button @onclick="@(e => AcceptRequestAsync(req.ID.ToString()))">Accept</button></span>
-                    <span><button @onclick="@(e => DeclineRequestAsync(req.ID.ToString()))">Decline</button></span>
-                </li>
-            }
-        }
-    </ul>
-</div>
 
 @code {
     [Parameter]
@@ -115,6 +126,17 @@
         {
             await JsRuntime.InvokeVoidAsync("alert", "Error occured! " + await response.Content.ReadAsStringAsync());
         }
+    }
+
+
+    protected void GoToFriends()
+    {
+        NavManager.NavigateTo("friends/" + UserId);
+    }
+
+    protected void GoToHome()
+    {
+        NavManager.NavigateTo("user/" + UserId);
     }
 
     protected void GoToUser()

@@ -21,6 +21,10 @@
       "url": "css\/create_chat.css"
     },
     {
+      "hash": "sha256-IJfupfz5f5Rpu5+SCKZuk1r4v8+Xn8Rr+xwIMU5i5BU=",
+      "url": "css\/friends.css"
+    },
+    {
       "hash": "sha256-zkUREyjy7tjmYNJTP\/K2Yhx1jXC5OS9HdPoiY1BD8Go=",
       "url": "css\/login_register.css"
     },
@@ -77,7 +81,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-j2IJHTzNORT34c3FYXN\/grm0AKFGO3usrPB36z4PcQE=",
+      "hash": "sha256-5KHaoFv41YWjehr\/vo4EhN38Qka8ceh65gHIP7b4qOQ=",
       "url": "index.html"
     },
     {
@@ -941,11 +945,11 @@
       "url": "_framework\/enMessage.Model.pdb"
     },
     {
-      "hash": "sha256-AWC8JoI6IgAXB39\/5LSOAb71AWHtILLEUc1BN0DQwDo=",
+      "hash": "sha256-UuhZkXms0wQsGrU97EdkhBGfTmW6yakX6WCvs3\/lxsg=",
       "url": "_framework\/enMessage.Client.dll"
     },
     {
-      "hash": "sha256-8fbMd+iSyvIESyL+6IU0sSZ9cOR+TAA2iFqFUHuCJ7E=",
+      "hash": "sha256-Rwxrj5g9XTGngVhkQoEsFtkVrto6IiOZirDFxS8DLgA=",
       "url": "_framework\/enMessage.Client.pdb"
     },
     {
@@ -953,9 +957,9 @@
       "url": "_framework\/blazor.webassembly.js"
     },
     {
-      "hash": "sha256-9fsNtur2lnyggAVV4dyMcwQUwr0ARqrdkzwcMaAk1cA=",
+      "hash": "sha256-BPMDbPFSQd658EmJ97ByaqPv3eTJGEeZz8FGfhddD+c=",
       "url": "_framework\/blazor.boot.json"
     }
   ],
-  "version": "T5tRyqM2"
+  "version": "MPd1NEMN"
 };

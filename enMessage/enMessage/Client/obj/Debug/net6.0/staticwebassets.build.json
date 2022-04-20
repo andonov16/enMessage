@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TmAiAUP1+aq5sryOCCbUs1Vg190m2oK+Ut7kPjisqx4=",
+  "Hash": "X+jmRnaMiOHMmgRXyvtHZyoKzyo3J3apC6EpJD333nM=",
   "Source": "enMessage.Client",
   "BasePath": "/",
   "Mode": "Root",
@@ -7563,6 +7563,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\create_chat.css"
+    },
+    {
+      "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\wwwroot\\css\\friends.css",
+      "SourceId": "enMessage.Client",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "css/friends.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\friends.css"
     },
     {
       "Identity": "D:\\Projects\\_GitHub_Repos\\enMessage\\enMessage\\enMessage\\Client\\wwwroot\\css\\login_register.css",
