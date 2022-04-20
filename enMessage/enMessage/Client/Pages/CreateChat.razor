@@ -1,0 +1,133 @@
+﻿@page "/createchat/{userid}"
+@using enMessage.Shared.ViewModels
+@inject IJSRuntime JsRuntime
+@inject HttpClient client
+@inject NavigationManager NavManager
+
+<div class="container">
+    <aside>
+        <nav class="grid-container">
+            <button class="nav-button" onclick="@GoToHome">Home</button>
+            <button class="nav-button active-button">Create chat</button>
+            <button class="nav-button" onclick="@GoToFriends">Friends</button>
+            <button class="nav-button" onclick="@Logout">Logout</button>
+        </nav>
+    </aside>
+
+    <main>
+
+
+        <form onsubmit = "@CreateChatAsync" class="login-form friend-form">
+            <input @bind="@chatName" placeholder="chat name"/>
+   
+            <button>Create chat</button>
+        </form>
+
+
+        <div class="friends-holder login-form">
+                    @if(@me != null)
+                    {
+                        @foreach(var fr in me.Friends)
+                        {
+                            <button class="friend-button" onclick="@(() => UsernameClicked(fr.Username))">@fr.Username</button>
+                        }
+                    }
+            </div>
+    </main>
+</div>
+
+
+@code {
+    [Parameter]
+    public string UserId { get; set; }
+    private UserViewModel me;
+    private string chatName;
+    private string myUsername = string.Empty;
+    private HashSet<string> usernames;
+
+    protected override async Task OnInitializedAsync()
+    {
+        usernames = new HashSet<string>();
+        me = await client.GetFromJsonAsync<UserViewModel>("api/users/" + UserId);
+        myUsername = me.Username;
+        usernames.Add(me.Username);
+    }
+
+    protected async Task CreateChatAsync()
+    {
+        if(!(await Validate()))
+        {
+            return;
+        }
+
+        var request = new HttpRequestMessage(HttpMethod.Post, 
+            "/api/chats/createchat/" + UserId + "/" + chatName);
+        var response = await client.SendAsync(request);
+
+        if(response.IsSuccessStatusCode)
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Chat created sucessfully!");
+            var addMembersRequest = new HttpRequestMessage(HttpMethod.Put,
+                "/api/chats/addmembers/" + UserId + "/" + chatName + "/" + String.Join(",", usernames));
+            var addMembersResponse = await client.SendAsync(addMembersRequest);
+
+            if(addMembersResponse.IsSuccessStatusCode)
+            {
+                NavManager.NavigateTo("user/" + me.ID);
+            }
+            else
+            {
+                await JsRuntime.InvokeVoidAsync("alert", "Error occured (members)!");        
+            }
+        }
+        else
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "An error occured!");  
+        }
+    }
+
+    protected void UsernameClicked(string username)
+    {
+        if(usernames.Contains(username))
+        {
+            usernames.Remove(username);
+        }
+        else
+        {
+            usernames.Add(username);
+        }
+    }
+
+    protected async Task<bool> Validate()
+    {
+        if(string.IsNullOrEmpty(chatName))
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Enter chat name first!");
+            return false;
+        } 
+
+        if(usernames.Count == 1)
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Choose friends first!");
+            return false;   
+        }
+
+        return true;
+    }
+
+
+    protected void GoToHome()
+    {
+        NavManager.NavigateTo("user/" + UserId);
+    }
+
+    protected void GoToFriends()
+    {
+        NavManager.NavigateTo("friends/" + UserId);
+    }
+
+    protected void Logout()
+    {
+        NavManager.NavigateTo("/");
+    }
+}
