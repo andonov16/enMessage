@@ -9,7 +9,7 @@
     <aside>
         <nav class="grid-container">
             <button class="nav-button" onclick="@GoToHome">Home</button>
-            <button class="nav-button">Create chat</button>
+            <button class="nav-button"  onclick="@GoToCreateChat">Create chat</button>
             <button class="nav-button active-button" onclick="@GoToFriends">Friends</button>
             <button class="nav-button" onclick="@Logout">Logout</button>
         </nav>
@@ -128,6 +128,13 @@
         }
     }
 
+
+
+
+    protected void GoToCreateChat()
+    {
+        NavManager.NavigateTo("createchat/" + UserId);
+    }
 
     protected void GoToFriends()
     {

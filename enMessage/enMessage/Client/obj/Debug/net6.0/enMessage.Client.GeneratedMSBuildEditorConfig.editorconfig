@@ -11,57 +11,57 @@ build_property.EnableTrimAnalyzer = true
 build_property.IncludeAllContentForSelfExtract = 
 build_property.RootNamespace = enMessage.Client
 build_property.RootNamespace = enMessage.Client
-build_property.ProjectDir = D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Client\
+build_property.ProjectDir = D:\Projects\_GitHubRepos\enMessage\enMessage\enMessage\Client\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Projects\_GitHub_Repos\enMessage\enMessage\enMessage\Client
+build_property.MSBuildProjectDirectory = D:\Projects\_GitHubRepos\enMessage\enMessage\enMessage\Client
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Projects/_GitHub_Repos/enMessage/enMessage/enMessage/Client/App.razor]
+[D:/Projects/_GitHubRepos/enMessage/enMessage/enMessage/Client/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/_GitHub_Repos/enMessage/enMessage/enMessage/Client/Pages/ChatRoom.razor]
+[D:/Projects/_GitHubRepos/enMessage/enMessage/enMessage/Client/Pages/ChatRoom.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhdFJvb20ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/_GitHub_Repos/enMessage/enMessage/enMessage/Client/Pages/CreateChat.razor]
+[D:/Projects/_GitHubRepos/enMessage/enMessage/enMessage/Client/Pages/CreateChat.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JlYXRlQ2hhdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/_GitHub_Repos/enMessage/enMessage/enMessage/Client/Pages/Friends.razor]
+[D:/Projects/_GitHubRepos/enMessage/enMessage/enMessage/Client/Pages/Friends.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRnJpZW5kcy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/_GitHub_Repos/enMessage/enMessage/enMessage/Client/Pages/Index.razor]
+[D:/Projects/_GitHubRepos/enMessage/enMessage/enMessage/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/_GitHub_Repos/enMessage/enMessage/enMessage/Client/Pages/Register.razor]
+[D:/Projects/_GitHubRepos/enMessage/enMessage/enMessage/Client/Pages/Register.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/_GitHub_Repos/enMessage/enMessage/enMessage/Client/Pages/User.razor]
+[D:/Projects/_GitHubRepos/enMessage/enMessage/enMessage/Client/Pages/User.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/_GitHub_Repos/enMessage/enMessage/enMessage/Client/Shared/Error.razor]
+[D:/Projects/_GitHubRepos/enMessage/enMessage/enMessage/Client/Shared/Error.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEVycm9yLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/_GitHub_Repos/enMessage/enMessage/enMessage/Client/Shared/SurveyPrompt.razor]
+[D:/Projects/_GitHubRepos/enMessage/enMessage/enMessage/Client/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/_GitHub_Repos/enMessage/enMessage/enMessage/Client/_Imports.razor]
+[D:/Projects/_GitHubRepos/enMessage/enMessage/enMessage/Client/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Projects/_GitHub_Repos/enMessage/enMessage/enMessage/Client/Shared/MainLayout.razor]
+[D:/Projects/_GitHubRepos/enMessage/enMessage/enMessage/Client/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-de2amxfmle
 
-[D:/Projects/_GitHub_Repos/enMessage/enMessage/enMessage/Client/Shared/NavMenu.razor]
+[D:/Projects/_GitHubRepos/enMessage/enMessage/enMessage/Client/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-r2gw39j62j
