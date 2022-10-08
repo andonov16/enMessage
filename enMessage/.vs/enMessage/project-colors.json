@@ -15,7 +15,47 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "ed282940-9dd6-4f97-895a-6926b77d889c": {
+      "ProjectGuid": "ed282940-9dd6-4f97-895a-6926b77d889c",
+      "DisplayName": "Service",
+      "ColorIndex": 2
+    },
+    "955d3b72-8778-43b8-a9d8-f4c76bc2bd72": {
+      "ProjectGuid": "955d3b72-8778-43b8-a9d8-f4c76bc2bd72",
+      "DisplayName": "enMessage.Model",
+      "ColorIndex": 3
+    },
+    "b5793754-34c2-417a-a957-4252a02de315": {
+      "ProjectGuid": "b5793754-34c2-417a-a957-4252a02de315",
+      "DisplayName": "enMessage.DataAccess",
+      "ColorIndex": 4
+    },
+    "c14b4624-f252-420b-b712-35b3347e8cc0": {
+      "ProjectGuid": "c14b4624-f252-420b-b712-35b3347e8cc0",
+      "DisplayName": "enMessage.Server",
+      "ColorIndex": 5
+    },
+    "6d5beb16-db1d-4d5d-9da4-1d7df184edd5": {
+      "ProjectGuid": "6d5beb16-db1d-4d5d-9da4-1d7df184edd5",
+      "DisplayName": "enMessage.Client",
+      "ColorIndex": 6
+    },
+    "3d6061cb-1dab-47ec-b693-cbaba256232d": {
+      "ProjectGuid": "3d6061cb-1dab-47ec-b693-cbaba256232d",
+      "DisplayName": "enMessage.Shared",
+      "ColorIndex": 7
+    },
+    "fbc53998-4395-483b-ac20-4ddf9fbb8f83": {
+      "ProjectGuid": "fbc53998-4395-483b-ac20-4ddf9fbb8f83",
+      "DisplayName": "EncryptingMessages",
+      "ColorIndex": 8
+    },
+    "d2fdf881-964e-461e-8b70-1a23521b4435": {
+      "ProjectGuid": "d2fdf881-964e-461e-8b70-1a23521b4435",
+      "DisplayName": "HashingText",
+      "ColorIndex": 9
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 10
 }

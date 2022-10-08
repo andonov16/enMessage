@@ -1,0 +1,59 @@
+﻿@page "/"
+@using System.Text.Json
+@using System.Text.Json.Serialization;
+@using enMessage.Shared.Utilities
+@using enMessage.Shared.ViewModels
+@inject IJSRuntime JsRuntime
+@inject HttpClient client
+@inject NavigationManager NavManager
+
+
+<article class="login-container">
+        <form class="login-form" method="get" onsubmit="@LoginSubmit">
+            <h1 class="login">Login</h1>
+
+            <input @bind = "email" placeholder="email"/>
+
+            <input @bind = "password" type="password" placeholder="password"/>
+            <button>Login</button>
+            
+            <p class="message">Don`t have account yet?</p>
+            <a href="/register">Click here!</a>
+        </form>
+</article>
+
+
+@code{
+    UserViewModel logged;
+
+    string email, password;
+
+    public async Task LoginSubmit()
+    {
+        if(!(await ValidateInput(email, password)))
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Enter email and password first!");
+            return;
+        }
+
+        string hashedEmail = HashUtil.Compute(email), hashedPassword = HashUtil.Compute(password);
+
+
+        try
+        {
+            var userID = await client.GetFromJsonAsync<Guid>("api/Account/"+hashedEmail+"/"+hashedPassword);
+            NavManager.NavigateTo("/user/"+userID+"/");
+        }catch(Exception)
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Invalid account details!");
+            return;
+        }
+
+
+    }
+
+    private async Task<bool> ValidateInput(string email, string password)
+    {
+        return !string.IsNullOrEmpty(email) && !string.IsNullOrEmpty(password);
+    }
+}

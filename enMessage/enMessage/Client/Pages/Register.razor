@@ -1,0 +1,73 @@
+﻿@page "/register"
+@using Newtonsoft.Json
+@using enMessage.Shared.Utilities
+@using enMessage.Shared.ViewModels
+@inject IJSRuntime JsRuntime
+@inject HttpClient client
+@inject NavigationManager NavManager
+
+
+
+
+<div class="login-container">
+    <form class="login-form" method="post" onsubmit="@RegisterSubmit">
+        <h3 class="register">Register</h3>
+        <input @bind="username" placeholder="username"/>
+        <input @bind="email" placeholder="email"/>
+        <input @bind="password" type="password" placeholder="password"/>
+        <input @bind="confirmPassword" type="password" placeholder="confirm password"/>
+
+        <button>Register</button>
+        <p class="message">Already have account?</p>
+        <a href="/">Click here!</a>
+    </form>
+</div>
+
+
+
+
+@code {
+    string username, email, password, confirmPassword;
+
+    private async Task RegisterSubmit()
+    {
+        bool isValid = await ValidateInput(username, email, password, confirmPassword);
+        if(!isValid)
+        {
+            return;
+        }
+
+        var hashedEmail = HashUtil.Compute(email);
+        var hashedPassword = HashUtil.Compute(password);
+
+        var request = new HttpRequestMessage(HttpMethod.Post, "/api/Account/" + username + "/" + hashedEmail + "/" + hashedPassword);
+        var response = await client.SendAsync(request);
+
+        if(response.IsSuccessStatusCode)
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Account created sucessfully!");
+            NavManager.NavigateTo("/");
+        }else
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Could not create an account! " + await response.Content.ReadAsStringAsync());
+        }
+    }
+
+    private async Task<bool> ValidateInput(string username, string email, string password, string confirmPassword)
+    {
+        if(string.IsNullOrEmpty(username) || string.IsNullOrEmpty(email)
+        || string.IsNullOrEmpty(password) || string.IsNullOrEmpty(confirmPassword))
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Please fill all inputs!");
+            return false;
+        }
+
+        if (password.CompareTo(confirmPassword) != 0)
+        {
+            await JsRuntime.InvokeVoidAsync("alert", "Passwords don`t match!");
+            return false;
+        }
+
+        return true;
+    }
+}

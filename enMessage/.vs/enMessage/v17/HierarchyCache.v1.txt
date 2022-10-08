@@ -1,0 +1,334 @@
+﻿++Solution 'enMessage' ‎(5 of 5 projects)
+i:{00000000-0000-0000-0000-000000000000}:enMessage.sln
+++enMessageData
+i:{00000000-0000-0000-0000-000000000000}:enMessageData
+++enMessage.Model
+i:{fccb9405-e17f-4441-bf02-4146bea9baf5}:enMessage.Model
+i:{b5793754-34c2-417a-a957-4252a02de315}:d:\projects\_github_repos\enmessage\enmessage\enmessage.model\enmessage.model.csproj
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage.model\enmessage.model.csproj
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage.model\enmessage.model.csproj
+++Dependencies
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:>2100
+i:{b5793754-34c2-417a-a957-4252a02de315}:>2101
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:>3668
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:>2102
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:>3669
+++BaseEntity.cs
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:d:\projects\_github_repos\enmessage\enmessage\enmessage.model\baseentity.cs
+++Chat.cs
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:d:\projects\_github_repos\enmessage\enmessage\enmessage.model\chat.cs
+++Friend.cs
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:d:\projects\_github_repos\enmessage\enmessage\enmessage.model\friend.cs
+++Message.cs
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:d:\projects\_github_repos\enmessage\enmessage\enmessage.model\message.cs
+++Request.cs
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:d:\projects\_github_repos\enmessage\enmessage\enmessage.model\request.cs
+++Role.cs
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:d:\projects\_github_repos\enmessage\enmessage\enmessage.model\role.cs
+++User.cs
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:d:\projects\_github_repos\enmessage\enmessage\enmessage.model\user.cs
+++Analyzers
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:analyzers
+i:{b5793754-34c2-417a-a957-4252a02de315}:analyzers
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:analyzers
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:analyzers
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:analyzers
+++Frameworks
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:frameworks
+i:{b5793754-34c2-417a-a957-4252a02de315}:frameworks
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:frameworks
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:frameworks
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:frameworks
+++Packages
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:packages
+i:{b5793754-34c2-417a-a957-4252a02de315}:packages
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:packages
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:packages
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:packages
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{b5793754-34c2-417a-a957-4252a02de315}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{b5793754-34c2-417a-a957-4252a02de315}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++Microsoft.EntityFrameworkCore.Analyzers
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:c:\users\miro\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.3\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{b5793754-34c2-417a-a957-4252a02de315}:c:\users\miro\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.3\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:c:\users\miro\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.3\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:c:\users\miro\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.3\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:c:\users\miro\.nuget\packages\microsoft.entityframeworkcore.analyzers\6.0.3\analyzers\dotnet\cs\microsoft.entityframeworkcore.analyzers.dll
+++Microsoft.Extensions.Logging.Generators
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:c:\users\miro\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{b5793754-34c2-417a-a957-4252a02de315}:c:\users\miro\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:c:\users\miro\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.0\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:c:\users\miro\.nuget\packages\microsoft.extensions.logging.abstractions\6.0.1\analyzers\dotnet\roslyn4.0\cs\microsoft.extensions.logging.generators.dll
+++System.Text.Json.SourceGeneration
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{b5793754-34c2-417a-a957-4252a02de315}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.NETCore.App
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:d:\projects\_github_repos\enmessage\enmessage\enmessage.model\microsoft.netcore.app
+i:{b5793754-34c2-417a-a957-4252a02de315}:d:\projects\_github_repos\enmessage\enmessage\enmessage.dataaccess\microsoft.netcore.app
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\server\microsoft.netcore.app
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\microsoft.netcore.app
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\microsoft.netcore.app
+++Microsoft.EntityFrameworkCore (6.0.3)
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:>3716
+i:{b5793754-34c2-417a-a957-4252a02de315}:>3733
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:>3684
+++Microsoft.EntityFrameworkCore.Design (6.0.3)
+i:{955d3b72-8778-43b8-a9d8-f4c76bc2bd72}:>3717
+++enMessage.DataAccess
+i:{fccb9405-e17f-4441-bf02-4146bea9baf5}:enMessage.DataAccess
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage.dataaccess\enmessage.dataaccess.csproj
+++Repositories
+i:{b5793754-34c2-417a-a957-4252a02de315}:d:\projects\_github_repos\enmessage\enmessage\enmessage.dataaccess\repositories\
+++ChatContext.cs
+i:{b5793754-34c2-417a-a957-4252a02de315}:d:\projects\_github_repos\enmessage\enmessage\enmessage.dataaccess\chatcontext.cs
+++Projects
+i:{b5793754-34c2-417a-a957-4252a02de315}:projects
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:projects
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:projects
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:projects
+++BaseRepository.cs
+i:{b5793754-34c2-417a-a957-4252a02de315}:d:\projects\_github_repos\enmessage\enmessage\enmessage.dataaccess\repositories\baserepository.cs
+++ChatRepository.cs
+i:{b5793754-34c2-417a-a957-4252a02de315}:d:\projects\_github_repos\enmessage\enmessage\enmessage.dataaccess\repositories\chatrepository.cs
+++FriendRepository.cs
+i:{b5793754-34c2-417a-a957-4252a02de315}:d:\projects\_github_repos\enmessage\enmessage\enmessage.dataaccess\repositories\friendrepository.cs
+++MessageRepository.cs
+i:{b5793754-34c2-417a-a957-4252a02de315}:d:\projects\_github_repos\enmessage\enmessage\enmessage.dataaccess\repositories\messagerepository.cs
+++RequestRepository.cs
+i:{b5793754-34c2-417a-a957-4252a02de315}:d:\projects\_github_repos\enmessage\enmessage\enmessage.dataaccess\repositories\requestrepository.cs
+++RoleRepository.cs
+i:{b5793754-34c2-417a-a957-4252a02de315}:d:\projects\_github_repos\enmessage\enmessage\enmessage.dataaccess\repositories\rolerepository.cs
+++UserRepository.cs
+i:{b5793754-34c2-417a-a957-4252a02de315}:d:\projects\_github_repos\enmessage\enmessage\enmessage.dataaccess\repositories\userrepository.cs
+++Microsoft.EntityFrameworkCore.SqlServer (6.0.3)
+i:{b5793754-34c2-417a-a957-4252a02de315}:>3734
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:>3685
+++Microsoft.EntityFrameworkCore.Tools (6.0.3)
+i:{b5793754-34c2-417a-a957-4252a02de315}:>3735
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:>3688
+++enMessageWeb
+i:{00000000-0000-0000-0000-000000000000}:enMessageWeb
+++enMessage.Server
+i:{ded9afdf-b201-4e27-8816-f8485a858fa2}:enMessage.Server
+++Connected Services 
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:>3670
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:>3671
+++Properties
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\server\properties\
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\properties\
+++Controllers
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\server\controllers\
+++AccountController.cs
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\server\controllers\accountcontroller.cs
+++ChatsController.cs
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\server\controllers\chatscontroller.cs
+++RequestsController.cs
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\server\controllers\requestscontroller.cs
+++UsersController.cs
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\server\controllers\userscontroller.cs
+++Hubs
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\server\hubs\
+++Pages
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\server\pages\
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\pages\
+++appsettings.json
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\server\appsettings.json
+++Program.cs
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\server\program.cs
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\program.cs
+++No service dependencies discovered
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:>3672
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:>3673
+++launchSettings.json
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\server\properties\launchsettings.json
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\properties\launchsettings.json
+++ChatHub.cs
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\server\hubs\chathub.cs
+++Error.cshtml
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\server\pages\error.cshtml
+++appsettings.Development.json
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\server\appsettings.development.json
+++MessagePackAnalyzer
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:c:\users\miro\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
+++Microsoft.AspNetCore.Analyzers
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.0\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:c:\users\miro\.nuget\packages\microsoft.aspnetcore.components.analyzers\6.0.1\analyzers\dotnet\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.Internal.SourceGenerator.Transport
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.internal.sourcegenerator.transport.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:c:\users\miro\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:c:\users\miro\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++Microsoft.AspNetCore.App
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\server\microsoft.aspnetcore.app
+++Microsoft.AspNetCore.Components.WebAssembly.Server (6.0.1)
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:>3690
+++Microsoft.AspNetCore.SignalR.Client (6.0.3)
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:>3687
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:>3706
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.2)
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:>3689
+++Swashbuckle.AspNetCore (6.3.0)
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:>3686
+++enMessage.Client
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\enmessage.client.csproj
+i:{ded9afdf-b201-4e27-8816-f8485a858fa2}:enMessage.Client
+++enMessage.Shared
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\enmessage.shared.csproj
+i:{ded9afdf-b201-4e27-8816-f8485a858fa2}:enMessage.Shared
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\enmessage.shared.csproj
+++Error.cshtml.cs
+i:{c14b4624-f252-420b-b712-35b3347e8cc0}:d:\projects\_github_repos\enmessage\enmessage\enmessage\server\pages\error.cshtml.cs
+++Mappers
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\mappers\
+++Utilities
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\utilities\
+++ViewModels
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\viewmodels\
+++ChatMapper.cs
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\mappers\chatmapper.cs
+++MessageMapper.cs
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\mappers\messagemapper.cs
+++RequestMapper.cs
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\mappers\requestmapper.cs
+++RoleMapper.cs
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\mappers\rolemapper.cs
+++UserMapper.cs
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\mappers\usermapper.cs
+++HashUtil.cs
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\utilities\hashutil.cs
+++JsonUtil.cs
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\utilities\jsonutil.cs
+++KeyGenerator.cs
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\utilities\keygenerator.cs
+++MessageUtil.cs
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\utilities\messageutil.cs
+++BaseViewModel.cs
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\viewmodels\baseviewmodel.cs
+++ChatViewModel.cs
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\viewmodels\chatviewmodel.cs
+++MessageViewModel.cs
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\viewmodels\messageviewmodel.cs
+++RequestViewModel.cs
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\viewmodels\requestviewmodel.cs
+++RoleViewModel.cs
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\viewmodels\roleviewmodel.cs
+++UserViewModel.cs
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:d:\projects\_github_repos\enmessage\enmessage\enmessage\shared\viewmodels\userviewmodel.cs
+++Newtonsoft.Json (13.0.1)
+i:{3d6061cb-1dab-47ec-b693-cbaba256232d}:>3724
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:>3705
+++wwwroot
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\
+++ChatRoom.razor
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\pages\chatroom.razor
+++CreateChat.razor
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\pages\createchat.razor
+++Friends.razor
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\pages\friends.razor
+++Index.razor
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\pages\index.razor
+++Register.razor
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\pages\register.razor
+++User.razor
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\pages\user.razor
+++Shared
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\shared\
+++_Imports.razor
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\_imports.razor
+++App.razor
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\app.razor
+++libman.json
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\libman.json
+++css
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\css\
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\css\open-iconic\font\css\
+++favicon.ico
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\favicon.ico
+++icon-192.png
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\icon-192.png
+++icon-512.png
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\icon-512.png
+++index.html
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\index.html
+++manifest.json
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\manifest.json
+++service-worker.js
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\service-worker.js
+++MainLayout.razor
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\shared\mainlayout.razor
+++NavMenu.razor
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\shared\navmenu.razor
+++SurveyPrompt.razor
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\shared\surveyprompt.razor
+++ILLink.CodeFixProvider
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\illink.codefixprovider.dll
+++ILLink.RoslynAnalyzer
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\illink.roslynanalyzer.dll
+++Microsoft.AspNetCore.Components.WebAssembly (6.0.1)
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:>3704
+++Microsoft.AspNetCore.Components.WebAssembly.DevServer (6.0.1)
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:>3707
+++bootstrap
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\css\bootstrap\
+++open-iconic
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\css\open-iconic\
+++app.css
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\css\app.css
+++service-worker.published.js
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\service-worker.published.js
+++MainLayout.razor.css
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\shared\mainlayout.razor.css
+++NavMenu.razor.css
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\shared\navmenu.razor.css
+++bootstrap.min.css
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\css\bootstrap\bootstrap.min.css
+++font
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\css\open-iconic\font\
+++FONT-LICENSE
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\css\open-iconic\font-license
+++ICON-LICENSE
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\css\open-iconic\icon-license
+++README.md
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\css\open-iconic\readme.md
+++bootstrap.min.css.map
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\css\bootstrap\bootstrap.min.css.map
+++fonts
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\css\open-iconic\font\fonts\
+++open-iconic-bootstrap.min.css
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\css\open-iconic\font\css\open-iconic-bootstrap.min.css
+++open-iconic.eot
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\css\open-iconic\font\fonts\open-iconic.eot
+++open-iconic.otf
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\css\open-iconic\font\fonts\open-iconic.otf
+++open-iconic.svg
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\css\open-iconic\font\fonts\open-iconic.svg
+++open-iconic.ttf
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\css\open-iconic\font\fonts\open-iconic.ttf
+++open-iconic.woff
+i:{6d5beb16-db1d-4d5d-9da4-1d7df184edd5}:d:\projects\_github_repos\enmessage\enmessage\enmessage\client\wwwroot\css\open-iconic\font\fonts\open-iconic.woff

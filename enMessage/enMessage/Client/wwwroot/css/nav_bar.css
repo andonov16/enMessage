@@ -1,0 +1,104 @@
+﻿@import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
+
+aside {
+    width: 30vw;
+    min-width: 300px;
+    max-width: 460px;
+    height: 100vh;
+    background-color: #172A3A;
+    display: inline-block;
+    font-size: 18px;
+    vertical-align: top;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+
+aside header {
+    padding: 30px 20px;
+}
+
+aside nav {
+    width: 100%;
+    min-height: 80px;
+}
+.nav-button {
+    height: 80px;
+    border: none;
+}
+    .nav-button:hover {
+        height: 80px;
+        color: #E6DFDF;
+        font-weight: bold;
+        background-color: #58B666;
+    }
+
+.active-button {
+    color: #E6DFDF;
+    font-weight: bold;
+    background-color: #58b666;
+}
+
+aside ul {
+    padding-left: 0;
+    margin: 0;
+    list-style-type: none;
+/*    overflow-y: scroll;*/
+    height: auto;
+}
+
+    aside li {
+        padding: 10px 0;
+    }
+
+        aside li:hover {
+            background-color: #58b666;
+        }
+
+h2, h3 {
+    margin: 0;
+}
+
+aside li img {
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-right: 8px;
+}
+
+aside li div {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 12px;
+}
+
+aside li h2 {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+aside li h3 {
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    color: #7e818a;
+    font-weight: normal;
+}
+
+.status {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 7px;
+}
+
+
+.green {
+    background-color: #58b666;
+}
